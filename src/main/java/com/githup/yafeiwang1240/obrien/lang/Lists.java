@@ -12,10 +12,6 @@ public class Lists {
         return supplier.get();
     }
 
-    public static ArrayList newArrayList() {
-        return new ArrayList();
-    }
-
     public static ArrayList newArrayList(int initialCapacity) {
         return new ArrayList(initialCapacity);
     }
