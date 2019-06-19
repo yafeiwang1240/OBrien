@@ -12,8 +12,8 @@ public class Lists {
         return supplier.get();
     }
 
-    public static ArrayList newArrayList(int initialCapacity) {
-        return new ArrayList(initialCapacity);
+    public static <T> ArrayList<T> newArrayList(int initialCapacity) {
+        return new ArrayList<>(initialCapacity);
     }
 
     public static <T> ArrayList<T> newArrayList(Collection<? extends T> c) {
