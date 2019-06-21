@@ -1,26 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/CastTypeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/GroupFailedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/SerializationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/ToBytesException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/ToTemplateException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Bytes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/EnhanceBytes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/GroupUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IGroupFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/RegexUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/SerializableUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/Tools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/IValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/ValidateResult.java" afterDir="false" />
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="序列化和反序列化的封装">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/algorithm/Allocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Sets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/StackTrace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/Verification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/VerificationResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/annotation/BeanRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/annotation/MethodRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/HashKeyTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/StackTraceUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/ValidationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/AtLeastOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/ExactOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/Length.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/Match.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/NotNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/StringIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/UserDefined.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/ValidateRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/exception/ValidateFailedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/exception/ValidateInitialException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/AbstractValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/AtLeastOneValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/ExactOneValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/LengthValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/MatchValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/NotNullValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/StringInValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/UserDefinedValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/FieldValidateExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/ValidatePack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Lists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Lists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Bytes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Bytes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Maps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Maps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/RegexUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/RegexUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,13 +52,68 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Lists.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/Length.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="237">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/StackTrace.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/Verification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="18" column="58" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Arrays.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="3798" column="37" selection-start-line="3798" selection-start-column="37" selection-end-line="3798" selection-end-column="37" />
+              <folding>
+                <element signature="e#177013#177014#0" expanded="true" />
+                <element signature="e#177054#177055#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/StackTraceUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -50,51 +121,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/bean/Convert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-              <folding>
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/Tools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2001">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#1201#1202#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
-                <element signature="e#1645#1646#0" expanded="true" />
-                <element signature="e#1680#1681#0" expanded="true" />
-                <element signature="e#2017#2018#0" expanded="true" />
-                <element signature="e#2064#2065#0" expanded="true" />
-                <element signature="e#2366#2367#0" expanded="true" />
-                <element signature="e#2405#2406#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="175">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Double.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/EnhanceBytes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="537" column="38" lean-forward="true" selection-start-line="537" selection-start-column="38" selection-end-line="537" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/misc/FloatingDecimal.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+            <state relative-caret-position="175">
+              <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -102,60 +139,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/SerializableUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-101">
-              <caret line="44" column="84" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="350">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/GroupUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/VerificationResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IGroupFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="47" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/RegexUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/BeanUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4298#4299#0" expanded="true" />
-                <element signature="e#4336#4337#0" expanded="true" />
-                <element signature="method#copyField#0;class#CopyField#0;class#BeanUtils#0" />
-                <element signature="method#copyFieldNotExit#0;class#CopyField#0;class#BeanUtils#0" />
-              </folding>
+            <state relative-caret-position="363">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -166,6 +160,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -180,6 +175,8 @@
       <find>toByte</find>
       <find>toFlo</find>
       <find>MASK_FOR_LOWER_INT_IN_LONG</find>
+      <find>cache</find>
+      <find>mee</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,40 +185,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/Convert.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/Bean/Convert.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Supperli.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/NoSuchFieldException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/UnMatchedTypeException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/bean/Convert.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/BeanUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Supplier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Maps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/UnSupportedEventException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/IEventHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/StatelessMachine/Builder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/MachineElement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/StatelessMachine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/FSM.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/IValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/ValidateResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/GroupFailedException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IGroupFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/GroupUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/RegexUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/SerializableUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/SerializationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/SerializationTypeException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Lists.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Bytes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/ToBytesException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/ToTemplateException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/CastTypeException.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/EnhanceBytes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/Tools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/HashKeyTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/StackTraceUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/annotation/BeanRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/annotation/MethodRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/StackTrace.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/VerificationResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/ValidateRule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/exception/ValidateFailedException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/AbstractValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/FieldValidateExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/ValidatePack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/exception/ValidateInitialException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/ValidationUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/RegexUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/AtLeastOne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/AtLeastOneValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/ExactOne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/ExactOneValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/FieldLength.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/FieldLengthValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/LengthValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/MatchValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/NotNullValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/In.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/algorithm/Allocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Maps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Sets.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/IntegerIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/IntegerInValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/StringInValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/UserDefined.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/StringIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/NotNull.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/Match.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/UserDefinedValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Bytes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/Verification.java" />
       </list>
     </option>
   </component>
@@ -305,7 +319,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
               <item name="obrien" type="462c0819:PsiDirectoryNode" />
-              <item name="uitls" type="462c0819:PsiDirectoryNode" />
+              <item name="stacktrace" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
@@ -315,7 +329,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
               <item name="obrien" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
+              <item name="uitls" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -344,6 +358,10 @@
       <recent name="com.githup.yafeiwang1240.obrien.Bean" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.githup.yafeiwang1240.obrien.validation.annotation" />
+      <recent name="com.githup.yafeiwang1240.obrien.validation.impl" />
+      <recent name="com.githup.yafeiwang1240.obrien.validation.exception" />
+      <recent name="com.githup.yafeiwang1240.obrien.validation.model" />
       <recent name="com.githup.yafeiwang1240.obrien.fsm.StatelessMachine" />
     </key>
   </component>
@@ -394,7 +412,15 @@
       <workItem from="1560768985490" duration="3579000" />
       <workItem from="1560822916707" duration="5012000" />
       <workItem from="1560836099397" duration="35000" />
-      <workItem from="1560909392366" duration="9920000" />
+      <workItem from="1560909392366" duration="14114000" />
+      <workItem from="1560938956380" duration="821000" />
+      <workItem from="1560942986308" duration="227000" />
+      <workItem from="1561017124462" duration="277000" />
+      <workItem from="1561017856409" duration="418000" />
+      <workItem from="1561019098147" duration="353000" />
+      <workItem from="1561019460379" duration="57000" />
+      <workItem from="1561019539261" duration="13140000" />
+      <workItem from="1561082731875" duration="6668000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -417,17 +443,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560759348064</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="序列化和反序列化的封装">
+      <created>1560922429015</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560922429015</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48185000" />
+    <option name="totallyTimeSpent" value="74340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3047696" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20048505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -435,9 +468,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4995958" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.21847247" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.12788633" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4995958" weight="0.38721138" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -445,7 +478,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004042" side_tool="true" weight="0.44760212" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2497979" />
@@ -466,17 +499,439 @@
     <MESSAGE value="Java Bean封装" />
     <MESSAGE value="Bean Tools" />
     <MESSAGE value="实现同步状态转换机" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现同步状态转换机" />
+    <MESSAGE value="序列化和反序列化的封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="序列化和反序列化的封装" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Constructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8600">
+          <caret line="405" column="13" selection-start-line="405" selection-start-column="13" selection-end-line="405" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10575">
+          <caret line="483" column="18" selection-start-line="483" selection-start-column="18" selection-end-line="483" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/ValidatePack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/CharSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="106" column="17" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="533" column="18" selection-start-line="533" selection-start-column="18" selection-end-line="533" selection-end-column="18" />
+          <folding>
+            <element signature="e#49229#49230#0" expanded="true" />
+            <element signature="e#49290#49291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/regex/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="794" column="28" selection-start-line="794" selection-start-column="28" selection-end-line="794" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/RegexUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/AbstractValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/AtLeastOneValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/ExactOneValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/MatchValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/annotation/ElementType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/annotation/Target.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/NotNullValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/annotation/Annotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/HashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="143" column="11" selection-start-line="143" selection-start-column="11" selection-end-line="143" selection-end-column="11" />
+          <folding>
+            <element signature="e#5324#5325#0" expanded="true" />
+            <element signature="e#5376#5377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/IntegerIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/IntegerInValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/StringInValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/ValidateRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/UserDefined.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/StringIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/NotNull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/Match.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/ExactOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/AtLeastOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/IValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/UserDefinedValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="64" column="50" selection-start-line="64" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/algorithm/Allocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/annotation/BeanRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/FSM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Bytes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="237" column="13" selection-start-line="237" selection-start-column="13" selection-end-line="237" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Lists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Maps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Sets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/LengthValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="57" lean-forward="true" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/Length.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/StackTrace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/bean/Convert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/EnhanceBytes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/SerializableUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/VerificationResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93175">
-          <caret line="3798" column="30" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
+        <state relative-caret-position="179">
+          <caret line="3798" column="37" selection-start-line="3798" selection-start-column="37" selection-end-line="3798" selection-end-column="37" />
           <folding>
             <element signature="e#177013#177014#0" expanded="true" />
             <element signature="e#177054#177055#0" expanded="true" />
@@ -484,434 +939,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/UnSupportedEventException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
-          <folding>
-            <element signature="e#132#133#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/StatelessMachine/Builder.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5325">
-          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14150">
-          <caret line="610" column="13" selection-start-line="610" selection-start-column="13" selection-end-line="610" selection-end-column="13" />
-          <folding>
-            <element signature="e#19327#19328#0" expanded="true" />
-            <element signature="e#19410#19411#0" expanded="true" />
-            <element signature="e#24331#24332#0" expanded="true" />
-            <element signature="e#24396#24397#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="803" column="16" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
-          <folding>
-            <element signature="e#22924#22925#0" expanded="true" />
-            <element signature="e#22948#22949#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/StatelessMachine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2330#2331#0" expanded="true" />
-            <element signature="e#2389#2390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/IValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/regex/Matcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12650">
-          <caret line="537" column="18" selection-start-line="537" selection-start-column="18" selection-end-line="537" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/regex/Pattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18975">
-          <caret line="794" column="28" selection-start-line="794" selection-start-column="28" selection-end-line="794" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14600">
-          <caret line="633" column="19" selection-start-line="633" selection-start-column="19" selection-end-line="633" selection-end-column="19" />
-          <folding>
-            <element signature="e#23072#23073#0" expanded="true" />
-            <element signature="e#23112#23113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/ValidateResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/Closeable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="51" column="42" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/DataInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2900">
-          <caret line="148" column="10" selection-start-line="148" selection-start-column="10" selection-end-line="148" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1.jar!/com/google/common/annotations/VisibleForTesting.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="4554" column="11" selection-start-line="4554" selection-start-column="11" selection-end-line="4554" selection-end-column="11" />
-          <folding>
-            <element signature="e#152752#152753#0" expanded="true" />
-            <element signature="e#152786#152787#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="1322" column="36" selection-start-line="1322" selection-start-column="36" selection-end-line="1322" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Byte.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="507" column="28" selection-start-line="507" selection-start-column="28" selection-end-line="507" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Long.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="1342" column="36" selection-start-line="1342" selection-start-column="36" selection-end-line="1342" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Float.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/SerializationException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/StackTraceUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/FSM.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/Verification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="12" />
+        <state relative-caret-position="224">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/IEventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/MachineElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Maps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/UnMatchedTypeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/ToBytesException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="29" />
-          <folding>
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#183#184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/GroupFailedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/CastTypeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/ToTemplateException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/org/apache/commons/lang3/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Boolean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Bytes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5975">
-          <caret line="248" column="34" selection-start-line="248" selection-start-column="23" selection-end-line="248" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/EnhanceBytes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="77" column="19" lean-forward="true" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/BeanUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4298#4299#0" expanded="true" />
-            <element signature="e#4336#4337#0" expanded="true" />
-            <element signature="method#copyField#0;class#CopyField#0;class#BeanUtils#0" />
-            <element signature="method#copyFieldNotExit#0;class#CopyField#0;class#BeanUtils#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/GroupUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IGroupFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/RegexUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/SerializableUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="44" column="84" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Lists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/bean/Convert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/misc/FloatingDecimal.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="537" column="38" lean-forward="true" selection-start-line="537" selection-start-column="38" selection-end-line="537" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/Tools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2001">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#1680#1681#0" expanded="true" />
-            <element signature="e#2017#2018#0" expanded="true" />
-            <element signature="e#2064#2065#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2405#2406#0" expanded="true" />
           </folding>
         </state>
       </provider>

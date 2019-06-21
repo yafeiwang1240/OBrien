@@ -61,8 +61,5 @@ public class RegexUtils {
     public static Matcher getMatcher(String content, String regex) {
         Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE | Pattern.DOTALL | Pattern.MULTILINE);
         return pattern.matcher(content);
-
     }
-
-
 }

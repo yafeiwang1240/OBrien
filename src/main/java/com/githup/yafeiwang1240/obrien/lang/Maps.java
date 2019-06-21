@@ -1,5 +1,8 @@
 package com.githup.yafeiwang1240.obrien.lang;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Map生成工具
  */
@@ -9,4 +12,7 @@ public class Maps {
         return supplier.get();
     }
 
+    public static <K, V> Map<K, V> newHashMap(final int initialCapacity) {
+        return new HashMap<>(initialCapacity);
+    }
 }

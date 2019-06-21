@@ -235,7 +235,7 @@ public class Bytes {
     }
 
     /**
-     * 高位在前，地位在后
+     * 高位在前，低位在后
      * @param val
      * @return
      */
