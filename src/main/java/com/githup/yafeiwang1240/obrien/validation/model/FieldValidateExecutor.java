@@ -11,6 +11,7 @@ public class FieldValidateExecutor {
 
     public FieldValidateExecutor(Field field, AbstractValidator validator) {
         this.field = field;
+        this.field.setAccessible(true);
         this.validator = validator;
     }
 

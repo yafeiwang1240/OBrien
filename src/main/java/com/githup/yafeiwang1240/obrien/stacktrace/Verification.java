@@ -1,11 +1,11 @@
 package com.githup.yafeiwang1240.obrien.stacktrace;
 
+import com.githup.yafeiwang1240.obrien.lang.Lists;
 import com.githup.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
 import com.githup.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
 import com.githup.yafeiwang1240.obrien.uitls.StackTraceUtils;
 
 import java.lang.reflect.Method;
-import java.util.Arrays;
 
 /**
  * 校验器
@@ -20,7 +20,7 @@ public class Verification {
         VerificationResult result = new VerificationResult();
         if (from.getAnnotation(BeanRequest.class) == null) {
             result.setStatus(VerificationResult.Status.FAILED);
-            result.setMessages(Arrays.asList("object must with annotation " + BeanRequest.class.getName()));
+            result.setMessages(Lists.asList("object must with annotation " + BeanRequest.class.getName()));
             return result;
         }
         Method methodFind = null;
@@ -35,16 +35,16 @@ public class Verification {
             StackTrace stackTrace = StackTraceUtils.FrontStackTrace(clazz, method);
             if (methodFind.getName().equals(stackTrace.getMethodName()) && stackTrace.getClazzName().equals(from.getName())) {
                 result.setStatus(VerificationResult.Status.SUCCEED);
-                result.setMessages(Arrays.asList(from.getName(), methodFind.getName()));
+                result.setMessages(Lists.asList(from.getName(), methodFind.getName()));
                 return result;
             } else {
                 result.setStatus(VerificationResult.Status.FAILED);
-                result.setMessages(Arrays.asList("object and method must is Caller"));
+                result.setMessages(Lists.asList("object and method must is Caller"));
                 return result;
             }
         }
         result.setStatus(VerificationResult.Status.FAILED);
-        result.setMessages(Arrays.asList("object methods must with annotation " + MethodRequest.class.getName()));
+        result.setMessages(Lists.asList("object methods must with annotation " + MethodRequest.class.getName()));
         return result;
     }
 }

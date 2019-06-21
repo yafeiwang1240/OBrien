@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class ValidationUtils {
 
-    public static Map<Class, ValidatePack> validatorCache = Maps.create(ConcurrentHashMap::new);
+    protected static Map<Class, ValidatePack> validatorCache = Maps.create(ConcurrentHashMap::new);
 
     public static ValidateResult validate(Object o) throws ValidateInitialException {
         return validate("", o);

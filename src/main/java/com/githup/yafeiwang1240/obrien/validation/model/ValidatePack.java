@@ -21,7 +21,7 @@ public class ValidatePack {
         if(fieldValidators.containsKey(group)) {
             fieldValidators.get(group).add(executor);
         } else {
-            fieldValidators.put(group, Arrays.asList(executor));
+            fieldValidators.put(group, Lists.asList(executor));
         }
     }
 
@@ -33,7 +33,7 @@ public class ValidatePack {
         if(classValidators.containsKey(group)) {
             classValidators.get(group).add(validator);
         } else {
-            classValidators.put(group, Arrays.asList(validator));
+            classValidators.put(group, Lists.asList(validator));
         }
     }
 
