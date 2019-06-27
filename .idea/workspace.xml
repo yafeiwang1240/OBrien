@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,36 +19,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/Tools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/SerializableUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/RegexUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
@@ -57,11 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="375">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Thread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="300" column="47" selection-start-line="300" selection-start-column="41" selection-end-line="300" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -75,11 +54,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/HashKeyTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="-575">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="37" column="15" selection-start-line="37" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/IValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -145,7 +142,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/GroupUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/SerializableUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/SerializationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/SerializationTypeException.java" />
@@ -195,7 +191,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/ValidatePack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -226,8 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,19 +281,82 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
               <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="fsm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="stacktrace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="stacktrace" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
               <item name="uitls" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bi-framework-pptx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../framework" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -300,7 +366,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25862068" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -373,6 +439,19 @@
       <workItem from="1561099069900" duration="1231000" />
       <workItem from="1561107619934" duration="822000" />
       <workItem from="1561115202876" duration="283000" />
+      <workItem from="1561130918258" duration="1187000" />
+      <workItem from="1561132499811" duration="82000" />
+      <workItem from="1561132642303" duration="22000" />
+      <workItem from="1561136123858" duration="370000" />
+      <workItem from="1561195948221" duration="872000" />
+      <workItem from="1561356003134" duration="57000" />
+      <workItem from="1561464445728" duration="639000" />
+      <workItem from="1561513767285" duration="42000" />
+      <workItem from="1561516674421" duration="108000" />
+      <workItem from="1561516966630" duration="798000" />
+      <workItem from="1561517793063" duration="79000" />
+      <workItem from="1561531132676" duration="13000" />
+      <workItem from="1561599739464" duration="79000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -416,17 +495,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561098869717</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="版本更新">
+      <created>1561130964959</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561130964959</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86300000" />
+    <option name="totallyTimeSpent" value="90648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31851253" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38480195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -443,8 +529,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.12611012" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24511546" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004042" side_tool="true" weight="0.44760212" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.497979" visible="true" weight="0.27353463" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.502021" side_tool="true" weight="0.94503546" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.2497979" />
@@ -468,7 +554,8 @@
     <MESSAGE value="序列化和反序列化的封装" />
     <MESSAGE value="自动分配算法实现&#10;堆栈追踪校验&#10;Bean校验框架" />
     <MESSAGE value="解决Arrays.asList(T... a)生成ArrayList&lt;&gt;无add方法的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决Arrays.asList(T... a)生成ArrayList&lt;&gt;无add方法的bug" />
+    <MESSAGE value="版本更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -487,20 +574,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/EnhanceBytes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/StackTraceUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/VerificationResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -861,13 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5800">
-          <caret line="232" column="19" selection-start-line="232" selection-start-column="19" selection-end-line="232" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -899,17 +965,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/IValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IGroupFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -934,10 +993,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="37" column="15" selection-start-line="37" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/HashKeyTools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="-575">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IGroupFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="300" column="47" selection-start-line="300" selection-start-column="41" selection-end-line="300" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
