@@ -2,66 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/InitializationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/Initialized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/annotation/InitializeMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/annotation/Initializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/execution/InitializedFailedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/model/InitializePack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/algorithm/Allocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/Allocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/bean/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/Convert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/CastTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/exception/CastTypeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/GroupFailedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/exception/GroupFailedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/SerializationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/exception/SerializationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/ToBytesException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/exception/ToBytesException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/ToTemplateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/exception/ToTemplateException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/UnMatchedTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/exception/UnMatchedTypeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/UnSupportedEventException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/exception/UnSupportedEventException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/FSM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fsm/FSM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/IEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fsm/IEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/MachineElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fsm/MachineElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/fsm/StatelessMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fsm/StatelessMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Bytes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Bytes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/EnhanceBytes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/EnhanceBytes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Lists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Lists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Maps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Maps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Sets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Sets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/StackTrace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/stacktrace/StackTrace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/Verification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/stacktrace/Verification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/VerificationResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/stacktrace/VerificationResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/annotation/BeanRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/stacktrace/annotation/BeanRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/stacktrace/annotation/MethodRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/stacktrace/annotation/MethodRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/BeanUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/GroupUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/GroupUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/HashKeyTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/HashKeyTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IGroupFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/IGroupFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/IOUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/RegexUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/RegexUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/SerializableUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/SerializableUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/StackTraceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/StackTraceUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/Tools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/IValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/IValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/ValidationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/ValidationUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/AtLeastOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/AtLeastOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/ExactOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/ExactOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/Length.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/NotNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/NotNull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/StringIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/StringIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/UserDefined.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/UserDefined.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/annotation/ValidateRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/ValidateRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/exception/ValidateFailedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/exception/ValidateFailedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/exception/ValidateInitialException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/exception/ValidateInitialException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/AbstractValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/AbstractValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/AtLeastOneValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/AtLeastOneValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/ExactOneValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/ExactOneValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/LengthValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/LengthValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/MatchValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/MatchValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/NotNullValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/NotNullValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/StringInValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/StringInValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/impl/UserDefinedValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/UserDefinedValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/FieldValidateExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/model/FieldValidateExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/ValidatePack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/model/ValidatePack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/validation/model/ValidateResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/model/ValidateResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/githup/yafeiwang1240/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/yafeiwang1240/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,55 +24,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/IOUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/annotation/Initializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/IGroupFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/HashKeyTools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/yafeiwang1240/AppTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="313">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,37 +36,105 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/IValidator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/Initialized.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="125">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/InitializationUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/GroupUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/ValidationUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="75">
+              <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/BeanUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/execution/InitializedFailedException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2625">
-              <caret line="114" column="25" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+            <state relative-caret-position="225">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="37" />
+              <folding>
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/annotation/Inherited.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/model/InitializePack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+            <state relative-caret-position="171">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Method.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="483" column="18" selection-start-line="483" selection-start-column="18" selection-end-line="483" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Field.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="216" column="20" selection-start-line="216" selection-start-column="20" selection-end-line="216" selection-end-column="20" />
+              <folding>
+                <element signature="e#6809#6810#0" expanded="true" />
+                <element signature="e#6836#6837#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/InstantiationException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/model/ValidatePack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,6 +146,7 @@
       <list>
         <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -202,14 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/GroupUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/SerializableUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/SerializationException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/SerializationTypeException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/ToBytesException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/ToTemplateException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/exception/CastTypeException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/lang/EnhanceBytes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/Tools.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/HashKeyTools.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/StackTraceUtils.java" />
@@ -253,6 +216,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/githup/yafeiwang1240/obrien/uitls/IOUtils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/annotation/InitializeMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/annotation/Initialized.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/annotation/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/Initialized.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/annotation/Initializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/execution/InitializedFailedException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/model/InitializePack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/InitializationUtils.java" />
       </list>
     </option>
   </component>
@@ -292,6 +263,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -329,6 +301,101 @@
               <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
               <item name="OBrien" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="initialization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="initialization" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="initialization" type="462c0819:PsiDirectoryNode" />
+              <item name="execution" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="initialization" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yafeiwang1240" type="462c0819:PsiDirectoryNode" />
+              <item name="obrien" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OBrien" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OBrien" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -350,7 +417,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -375,11 +441,11 @@
       <recent name="com.githup.yafeiwang1240.obrien.Bean" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.github.yafeiwang1240.obrien.initialization.model" />
       <recent name="com.githup.yafeiwang1240.obrien.validation.annotation" />
       <recent name="com.githup.yafeiwang1240.obrien.validation.impl" />
       <recent name="com.githup.yafeiwang1240.obrien.validation.exception" />
       <recent name="com.githup.yafeiwang1240.obrien.validation.model" />
-      <recent name="com.githup.yafeiwang1240.obrien.fsm.StatelessMachine" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -454,7 +520,8 @@
       <workItem from="1561517793063" duration="79000" />
       <workItem from="1561531132676" duration="13000" />
       <workItem from="1561599739464" duration="440000" />
-      <workItem from="1562157279015" duration="362000" />
+      <workItem from="1562157279015" duration="795000" />
+      <workItem from="1562845148178" duration="3409000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -512,17 +579,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561600048887</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="githup -&gt; github">
+      <created>1562157787381</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1562157787381</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91371000" />
+    <option name="totallyTimeSpent" value="95213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3912692" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27970898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -532,14 +606,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4995958" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.43694493" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4995958" weight="0.20071048" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4995958" weight="0.5275311" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.12611012" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.497979" visible="true" weight="0.23445825" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.497979" weight="0.29307282" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.502021" side_tool="true" weight="0.94503546" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -566,150 +640,18 @@
     <MESSAGE value="解决Arrays.asList(T... a)生成ArrayList&lt;&gt;无add方法的bug" />
     <MESSAGE value="版本更新" />
     <MESSAGE value="新增IO阻塞方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增IO阻塞方法" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="githup -&gt; github" />
+    <option name="LAST_COMMIT_MESSAGE" value="githup -&gt; github" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="665" selection-start-line="665" selection-end-line="665" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/stacktrace/annotation/BeanRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/LengthValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="58" lean-forward="true" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="356" selection-start-line="356" selection-end-line="356" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="1138" selection-start-line="1138" selection-end-line="1138" />
-          <folding>
-            <element signature="e#46718#46719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="3412" selection-start-line="3412" selection-end-line="3412" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Constructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="409" selection-start-line="409" selection-end-line="409" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="1005" selection-start-line="1005" selection-end-line="1005" />
-          <folding>
-            <element signature="e#42680#42681#0" expanded="true" />
-            <element signature="e#42719#42720#0" expanded="true" />
-            <element signature="e#44395#44396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#1616#1617#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="e#2871#2872#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="556" selection-start-line="556" selection-end-line="556" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/NotNullValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/AbstractValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/stacktrace/annotation/MethodRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/model/FieldValidateExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -762,13 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/ValidationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/impl/UserDefinedValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -789,18 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/model/ValidatePack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/model/ValidateResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -817,13 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -858,16 +774,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/ExactOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/AtLeastOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
@@ -914,16 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/UserDefined.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/ValidateRule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -959,6 +855,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/IOUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/IGroupFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -973,10 +876,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/IValidator.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="150">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/yafeiwang1240/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1001,23 +911,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/IOUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/yafeiwang1240/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
+        <state relative-caret-position="92">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1025,10 +921,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/AtLeastOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="337">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/annotation/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" selection-start-column="54" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/annotation/UserDefined.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/annotation/InitializeMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/IValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/exception/ValidateInitialException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/exception/ValidateFailedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/model/FieldValidateExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/model/ValidatePack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/annotation/Initializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/execution/InitializedFailedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/InstantiationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="216" column="20" selection-start-line="216" selection-start-column="20" selection-end-line="216" selection-end-column="20" />
+          <folding>
+            <element signature="e#6809#6810#0" expanded="true" />
+            <element signature="e#6836#6837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/Initialized.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="483" column="18" selection-start-line="483" selection-start-column="18" selection-end-line="483" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/validation/ValidationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/model/InitializePack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/InitializationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
