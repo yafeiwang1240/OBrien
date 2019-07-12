@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * 方法初始化
  */
 
-@Target(ElementType.METHOD)
+@Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface InitializeMethod {
+public @interface InitializedMethod {
 }

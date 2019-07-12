@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
 /**
  * 属性初始化
  */
-@Target(ElementType.FIELD)
+@Target({ElementType.FIELD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Initializer {
     Class<? extends Initialized> initialization();

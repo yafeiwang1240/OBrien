@@ -1,5 +1,6 @@
 package com.github.yafeiwang1240.obrien.initialization.model;
 
+import com.github.yafeiwang1240.App;
 import com.github.yafeiwang1240.obrien.initialization.Initialized;
 import com.github.yafeiwang1240.obrien.initialization.annotation.Initializer;
 import com.github.yafeiwang1240.obrien.initialization.execution.InitializedFailedException;
@@ -20,9 +21,11 @@ public class InitializePack {
 
     private List<Method> methodInitializer = Lists.create(ArrayList::new);
 
+    private Initialized initialized;
+
     public void addFieldInitializer(Field f) throws InitializedFailedException {
         f.setAccessible(true);
-        Initializer annotation = f.getAnnotation(Initializer.class);
+        Initializer annotation = f.getDeclaredAnnotation(Initializer.class);
         if(annotation == null) {
             return;
         }
@@ -31,7 +34,6 @@ public class InitializePack {
         } catch (InstantiationException e) {
             throw new InitializedFailedException("初始化实例过程失败", e);
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
             throw new InitializedFailedException("初始化非法访问", e);
         }
     }
@@ -39,6 +41,10 @@ public class InitializePack {
     public void addMethodInitializer(Method m) {
         m.setAccessible(true);
         methodInitializer.add(m);
+    }
+
+    public void setInitialized(Initialized initialized) {
+        this.initialized = initialized;
     }
 
     public void initialize(Object o) throws InitializedFailedException{
@@ -59,5 +65,8 @@ public class InitializePack {
                 e.printStackTrace();
             }
         });
+        initialized.execute(o);
     }
+
+
 }

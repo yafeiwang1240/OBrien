@@ -13,14 +13,31 @@ import com.github.yafeiwang1240.obrien.validation.model.ValidateResult;
 import com.github.yafeiwang1240.obrien.bean.Convert;
 import com.github.yafeiwang1240.obrien.validation.ValidationUtils;
 
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
+
 /**
  * Hello world!
  *
  */
+@App.DD
 public class App 
 {
     public static void main( String[] args )
     {
+        System.out.print("\n");
+    }
+
+    public static void test1() {
+        DD dd = App.class.getDeclaredAnnotation(DD.class);
+    }
+
+    @Target({ElementType.TYPE, ElementType.METHOD})
+    public @interface DD {
+        String value() default "";
+    }
+
+    public static void test() {
         STACKTRANCE.call();
         FORM form = new FORM();
         CloneForm fff = null;
@@ -40,7 +57,7 @@ public class App
         for(String m : result.getMessages()) {
             System.out.print(m + "\t");
         }
-        System.out.print("\n");
+
     }
 
     public static class VV implements IValidator<FORM> {

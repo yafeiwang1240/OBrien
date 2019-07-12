@@ -1,6 +1,6 @@
 package com.github.yafeiwang1240.obrien.initialization;
 
-import com.github.yafeiwang1240.obrien.initialization.annotation.InitializeMethod;
+import com.github.yafeiwang1240.obrien.initialization.annotation.InitializedMethod;
 import com.github.yafeiwang1240.obrien.initialization.annotation.Initializer;
 import com.github.yafeiwang1240.obrien.initialization.execution.InitializedFailedException;
 import com.github.yafeiwang1240.obrien.initialization.model.InitializePack;
@@ -34,7 +34,7 @@ public class InitializationUtils {
         pack.initialize(o);
     }
 
-    private synchronized static InitializePack getAndCacheInitializer(Class clazz) throws InitializedFailedException {
+    private synchronized static InitializePack getAndCacheInitializer(Class<?> clazz) throws InitializedFailedException {
         if (initializeCache.containsKey(clazz)) return initializeCache.get(clazz);
         InitializePack pack = new InitializePack();
         initializeCache.put(clazz, pack);
@@ -42,17 +42,27 @@ public class InitializationUtils {
         while (_clazz != null) {
             Field[] fields = _clazz.getDeclaredFields();
             for (Field field : fields) {
-                if (field.getAnnotation(Initializer.class) != null) {
+                if (field.getDeclaredAnnotation(Initializer.class) != null) {
                     pack.addFieldInitializer(field);
                 }
             }
             Method[] methods = _clazz.getDeclaredMethods();
             for (Method method : methods) {
-                if (method.getAnnotation(InitializeMethod.class) != null) {
+                if (method.getDeclaredAnnotation(InitializedMethod.class) != null) {
                     pack.addMethodInitializer(method);
                 }
             }
             _clazz = _clazz.getSuperclass();
+        }
+
+        if (clazz.isAnnotationPresent(Initializer.class)){
+            try {
+                pack.setInitialized(clazz.getDeclaredAnnotation(Initializer.class).initialization().newInstance());
+            } catch (InstantiationException e) {
+                throw new InitializedFailedException(e.getMessage(), e);
+            } catch (IllegalAccessException e) {
+                throw new InitializedFailedException(e.getMessage(), e);
+            }
         }
 
         return pack;
