@@ -37,6 +37,7 @@ public class InitializePack {
     }
 
     public void addMethodInitializer(Method m) {
+        m.setAccessible(true);
         methodInitializer.add(m);
     }
 

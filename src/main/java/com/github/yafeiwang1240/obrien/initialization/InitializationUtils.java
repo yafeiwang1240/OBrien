@@ -36,19 +36,25 @@ public class InitializationUtils {
 
     private synchronized static InitializePack getAndCacheInitializer(Class clazz) throws InitializedFailedException {
         if (initializeCache.containsKey(clazz)) return initializeCache.get(clazz);
-        Field[] fields = clazz.getDeclaredFields();
         InitializePack pack = new InitializePack();
-        for (Field field : fields) {
-            if (field.getAnnotation(Initializer.class) != null) {
-                pack.addFieldInitializer(field);
+        initializeCache.put(clazz, pack);
+        Class _clazz = clazz;
+        while (_clazz != null) {
+            Field[] fields = _clazz.getDeclaredFields();
+            for (Field field : fields) {
+                if (field.getAnnotation(Initializer.class) != null) {
+                    pack.addFieldInitializer(field);
+                }
             }
-        }
-        Method[] methods = clazz.getDeclaredMethods();
-        for (Method method : methods) {
-            if (method.getAnnotation(InitializeMethod.class) != null) {
-                pack.addMethodInitializer(method);
+            Method[] methods = _clazz.getDeclaredMethods();
+            for (Method method : methods) {
+                if (method.getAnnotation(InitializeMethod.class) != null) {
+                    pack.addMethodInitializer(method);
+                }
             }
+            _clazz = _clazz.getSuperclass();
         }
+
         return pack;
     }
 }

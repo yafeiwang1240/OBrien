@@ -22,7 +22,7 @@ public class ValidationUtils {
         return validate("", o);
     }
 
-    private static ValidateResult validate(String group, Object o) throws ValidateInitialException {
+    public static ValidateResult validate(String group, Object o) throws ValidateInitialException {
         ValidateResult result = new ValidateResult();
         result.setStatus(ValidateResult.Status.SUCCESS);
         if( null == o ) return result;
@@ -64,7 +64,7 @@ public class ValidationUtils {
                     if(annotation.annotationType().isAnnotationPresent(ValidateRule.class)) {
                         ValidateRule validateRule = annotation.annotationType().getAnnotation(ValidateRule.class);
                         AbstractValidator validator = validateRule.value().getConstructor(annotation.annotationType()).newInstance(annotation);
-                        pack.addFieldValidator(field, validator);
+                        pack.addFieldValidator(field, getAnnotationGroup(annotation), validator);
                     }
                 }
             }
