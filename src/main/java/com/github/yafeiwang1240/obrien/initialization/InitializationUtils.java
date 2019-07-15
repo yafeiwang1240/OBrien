@@ -23,6 +23,10 @@ public class InitializationUtils {
     private static Map<Class, InitializePack> initializeCache = Maps.create(ConcurrentHashMap::new);
 
     public static void initialize(Object o) throws InitializedFailedException {
+        initialize("", o);
+    }
+
+    public static void initialize(String group, Object o) throws InitializedFailedException {
         if (o == null) return;
         Class clazz = o.getClass();
         InitializePack pack;
@@ -31,7 +35,7 @@ public class InitializationUtils {
         } else {
             pack = getAndCacheInitializer(clazz);
         }
-        pack.initialize(o);
+        pack.initialize(group, o);
     }
 
     private synchronized static InitializePack getAndCacheInitializer(Class<?> clazz) throws InitializedFailedException {
@@ -57,7 +61,7 @@ public class InitializationUtils {
 
         if (clazz.isAnnotationPresent(Initializer.class)){
             try {
-                pack.setInitialized(clazz.getDeclaredAnnotation(Initializer.class).initialization().newInstance());
+                pack.setInitialized(clazz.getDeclaredAnnotation(Initializer.class).group(), clazz.getDeclaredAnnotation(Initializer.class).initialization().newInstance());
             } catch (InstantiationException e) {
                 throw new InitializedFailedException(e.getMessage(), e);
             } catch (IllegalAccessException e) {

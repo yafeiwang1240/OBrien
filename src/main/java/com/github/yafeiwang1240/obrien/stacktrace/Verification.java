@@ -18,7 +18,7 @@ public class Verification {
      */
     public static VerificationResult validStack(Class from, Class clazz, Method method) {
         VerificationResult result = new VerificationResult();
-        if (from.getAnnotation(BeanRequest.class) == null) {
+        if (from.getDeclaredAnnotation(BeanRequest.class) == null) {
             result.setStatus(VerificationResult.Status.FAILED);
             result.setMessages(Lists.asList("object must with annotation " + BeanRequest.class.getName()));
             return result;
@@ -26,7 +26,7 @@ public class Verification {
         Method methodFind = null;
         Method[] methods = from.getDeclaredMethods();
         for (Method m : methods) {
-            if (m.getAnnotation(MethodRequest.class) != null) {
+            if (m.getDeclaredAnnotation(MethodRequest.class) != null) {
                 methodFind = m;
                 break;
             }
