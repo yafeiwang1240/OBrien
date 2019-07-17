@@ -4,6 +4,8 @@ import com.github.yafeiwang1240.obrien.stacktrace.Verification;
 import com.github.yafeiwang1240.obrien.stacktrace.VerificationResult;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
+import com.github.yafeiwang1240.obrien.template.InterfaceTemplateClass;
+import com.github.yafeiwang1240.obrien.template.SuperclassTemplateClass;
 import com.github.yafeiwang1240.obrien.validation.IValidator;
 import com.github.yafeiwang1240.obrien.validation.annotation.Length;
 import com.github.yafeiwang1240.obrien.validation.annotation.NotNull;
@@ -25,9 +27,14 @@ public class App
 {
     public static void main( String[] args )
     {
+        TT tt = new TT();
         System.out.print("\n");
+        System.out.println(tt.tClass());
     }
 
+    public static class TT implements InterfaceTemplateClass<App> {
+
+    }
     public static void test1() {
         DD dd = App.class.getDeclaredAnnotation(DD.class);
     }
