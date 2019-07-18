@@ -42,31 +42,32 @@ public class InitializationUtils {
         if (initializeCache.containsKey(clazz)) return initializeCache.get(clazz);
         InitializePack pack = new InitializePack();
         initializeCache.put(clazz, pack);
-        Class _clazz = clazz;
+        Class<?> _clazz = clazz;
         while (_clazz != null) {
+            // 属性初始化
             Field[] fields = _clazz.getDeclaredFields();
             for (Field field : fields) {
                 if (field.getDeclaredAnnotation(Initializer.class) != null) {
                     pack.addFieldInitializer(field);
                 }
             }
+
+            // 初始化方法
             Method[] methods = _clazz.getDeclaredMethods();
             for (Method method : methods) {
                 if (method.getDeclaredAnnotation(InitializedMethod.class) != null) {
                     pack.addMethodInitializer(method);
                 }
             }
-            _clazz = _clazz.getSuperclass();
-        }
 
-        if (clazz.isAnnotationPresent(Initializer.class)){
-            try {
-                pack.setInitialized(clazz.getDeclaredAnnotation(Initializer.class).group(), clazz.getDeclaredAnnotation(Initializer.class).initialization().newInstance());
-            } catch (InstantiationException e) {
-                throw new InitializedFailedException(e.getMessage(), e);
-            } catch (IllegalAccessException e) {
-                throw new InitializedFailedException(e.getMessage(), e);
+            // 类初始化
+            if (_clazz.isAnnotationPresent(Initializer.class)){
+                Initializer initializer = _clazz.getDeclaredAnnotation(Initializer.class);
+                pack.setInitialized(initializer);
             }
+
+            // 父类
+            _clazz = _clazz.getSuperclass();
         }
 
         return pack;
