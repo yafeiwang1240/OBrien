@@ -14,6 +14,10 @@ public class Lists {
         return supplier.get();
     }
 
+    public static <T> ArrayList<T> newArrayList() {
+        return new ArrayList<>();
+    }
+
     public static <T> List<T> asList(T... a) {
         return new ArrayList<>(Arrays.asList(a));
     }

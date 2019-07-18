@@ -9,6 +9,10 @@ public class Sets {
         return supplier.get();
     }
 
+    public static <T> Set<T> newHashSet() {
+        return new HashSet<>();
+    }
+
     public static <T> Set<T> newHashSet(final int initialCapacity) {
         return new HashSet<>(initialCapacity);
     }

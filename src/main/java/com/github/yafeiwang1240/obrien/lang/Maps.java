@@ -12,6 +12,9 @@ public class Maps {
         return supplier.get();
     }
 
+    public static <K, V> Map<K, V>  newHashMap() {
+        return new HashMap<>();
+    }
     public static <K, V> Map<K, V> newHashMap(final int initialCapacity) {
         return new HashMap<>(initialCapacity);
     }
