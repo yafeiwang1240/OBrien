@@ -120,7 +120,34 @@ public class FastReflectPack {
         return fields;
     }
 
+    public Field getField(String fieldName) throws ReflectFieldException {
+        if (!fieldModelCache.containsKey(fieldName)) {
+            throw new ReflectFieldException("无此属性");
+        }
+        return fieldModelCache.get(fieldName).getField();
+    }
+
     public List<Method> getMethods() {
         return methods;
+    }
+
+    public Method getMethod(String methodName, Class<?>[] paramTypes) throws ReflectFieldException {
+        if (!methodModelCache.containsKey(methodName)) {
+            throw new ReflectFieldException("无此属性");
+        }
+        List<MethodReflectModel> models = methodModelCache.get(methodName);
+        if (models.size() <= 0) {
+            throw new ReflectFieldException("无此属性");
+        }
+        if (models.size() == 1) {
+            return models.get(0).getMethod();
+        }
+        // 先进行强校验
+        for (MethodReflectModel model : models) {
+            if (model.equals(null, paramTypes, true)) {
+                return model.getMethod();
+            }
+        }
+        throw new ReflectFieldException("无此属性");
     }
 }

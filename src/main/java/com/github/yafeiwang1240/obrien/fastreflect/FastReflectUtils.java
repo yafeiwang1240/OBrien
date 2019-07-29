@@ -37,6 +37,20 @@ public class FastReflectUtils {
     }
 
     /**
+     * 获取方法 （算法复杂度 > O(1) ）
+     * @param clazz
+     * @param methodName
+     * @param paramTypes
+     * @return
+     * @throws ReflectClassException
+     * @throws ReflectFieldException
+     */
+    public static Method method(Class<?> clazz, String methodName, Class<?>[] paramTypes) throws ReflectClassException, ReflectFieldException {
+        FastReflectPack pack = getFastReflectPack(clazz);
+        return pack.getMethod(methodName, paramTypes);
+    }
+
+    /**
      * 获得属性列表（包含父类属性, 如果覆盖父类属性仅获得子类的属性）
      * @param clazz
      * @return
@@ -45,6 +59,19 @@ public class FastReflectUtils {
     public static List<Field> fields(Class<?> clazz) throws ReflectClassException {
         FastReflectPack pack = getFastReflectPack(clazz);
         return pack.getFields();
+    }
+
+    /**
+     * 获取属性
+     * @param clazz
+     * @param fieldName
+     * @return
+     * @throws ReflectClassException
+     * @throws ReflectFieldException
+     */
+    public static Field field(Class<?> clazz, String fieldName) throws ReflectClassException, ReflectFieldException {
+        FastReflectPack pack = getFastReflectPack(clazz);
+        return pack.getField(fieldName);
     }
 
     /**
