@@ -1,35 +1,50 @@
 package com.github.yafeiwang1240;
 
+import com.github.yafeiwang1240.obrien.bean.Convert;
 import com.github.yafeiwang1240.obrien.stacktrace.Verification;
 import com.github.yafeiwang1240.obrien.stacktrace.VerificationResult;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
 import com.github.yafeiwang1240.obrien.template.InterfaceTemplateClass;
-import com.github.yafeiwang1240.obrien.template.SuperclassTemplateClass;
 import com.github.yafeiwang1240.obrien.validation.IValidator;
+import com.github.yafeiwang1240.obrien.validation.ValidationUtils;
 import com.github.yafeiwang1240.obrien.validation.annotation.Length;
 import com.github.yafeiwang1240.obrien.validation.annotation.NotNull;
 import com.github.yafeiwang1240.obrien.validation.annotation.UserDefined;
 import com.github.yafeiwang1240.obrien.validation.exception.ValidateInitialException;
 import com.github.yafeiwang1240.obrien.validation.model.ValidateResult;
-import com.github.yafeiwang1240.obrien.bean.Convert;
-import com.github.yafeiwang1240.obrien.validation.ValidationUtils;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 /**
  * Hello world!
  *
  */
-@App.DD
 public class App 
 {
-    public static void main( String[] args )
-    {
-        TT tt = new TT();
-        System.out.print("\n");
-        System.out.println(tt.tClass());
+    public static void main( String[] args ) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        Method method = App.class.getMethod("test", Integer.class);
+        long t = System.currentTimeMillis();
+        for (int i = 0; i < 100000; i++) {
+            method.invoke(null, i);
+        }
+        System.out.println();
+        System.out.println(System.currentTimeMillis() - t);
+        t = System.currentTimeMillis();
+        for (int i = 0; i < 100000; i++) {
+            App.test(i);
+        }
+        System.out.println();
+        System.out.println(System.currentTimeMillis() - t);
+        System.out.println(App.class.getDeclaredAnnotations().length);
+    }
+
+    String ls;
+    public static void test(Integer value) {
+        System.out.print(value);
     }
 
     public static class TT implements InterfaceTemplateClass<App> {

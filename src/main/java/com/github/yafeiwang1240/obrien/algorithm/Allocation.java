@@ -76,7 +76,7 @@ public class Allocation {
         if(base == 0) {
             return base;
         }
-        return size > base ? size % base : base % size;
+        return size > base ? base : base % size;
     }
 
     /**
