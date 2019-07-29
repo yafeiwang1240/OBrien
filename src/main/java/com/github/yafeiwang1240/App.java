@@ -1,6 +1,10 @@
 package com.github.yafeiwang1240;
 
 import com.github.yafeiwang1240.obrien.bean.Convert;
+import com.github.yafeiwang1240.obrien.fastreflect.FastReflectUtils;
+import com.github.yafeiwang1240.obrien.fastreflect.exception.ReflectClassException;
+import com.github.yafeiwang1240.obrien.fastreflect.exception.ReflectFieldException;
+import com.github.yafeiwang1240.obrien.fastreflect.exception.ReflectMethodException;
 import com.github.yafeiwang1240.obrien.stacktrace.Verification;
 import com.github.yafeiwang1240.obrien.stacktrace.VerificationResult;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
@@ -25,21 +29,27 @@ import java.lang.reflect.Method;
  */
 public class App 
 {
-    public static void main( String[] args ) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public static void main( String[] args ) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, ReflectClassException, ReflectFieldException, ReflectMethodException {
         Method method = App.class.getMethod("test", Integer.class);
         long t = System.currentTimeMillis();
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 200000; i++) {
             method.invoke(null, i);
         }
         System.out.println();
         System.out.println(System.currentTimeMillis() - t);
         t = System.currentTimeMillis();
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 200000; i++) {
             App.test(i);
         }
         System.out.println();
         System.out.println(System.currentTimeMillis() - t);
-        System.out.println(App.class.getDeclaredAnnotations().length);
+
+        t = System.currentTimeMillis();
+        for (int i = 0; i < 200000; i++) {
+            FastReflectUtils.methodInvoke(App.class, "test", new Object[]{i});
+        }
+        System.out.println();
+        System.out.println(System.currentTimeMillis() - t);
     }
 
     String ls;

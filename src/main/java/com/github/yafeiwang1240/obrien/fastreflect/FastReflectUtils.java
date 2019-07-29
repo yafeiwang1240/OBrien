@@ -56,8 +56,16 @@ public class FastReflectUtils {
      * @throws ReflectFieldException
      */
     public static void setFieldValue(Object o, String fieldName, Object value) throws ReflectClassException, ReflectFieldException {
-        FastReflectPack pack = getFastReflectPack(o.getClass());
-        pack.setFiledValue(o, fieldName, value);
+        Class _clazz;
+        Object _o = null;
+        if (o instanceof Class<?>) {
+            _clazz = (Class) o;
+        } else {
+            _clazz = o.getClass();
+            _o = o;
+        }
+        FastReflectPack pack = getFastReflectPack(_clazz);
+        pack.setFiledValue(_o, fieldName, value);
     }
 
     /**
@@ -67,32 +75,16 @@ public class FastReflectUtils {
      * @return
      */
     public static Object getFieldValue(Object o, String fieldName) throws ReflectClassException, ReflectFieldException {
-        FastReflectPack pack = getFastReflectPack(o.getClass());
-        return pack.getFiledValue(o, fieldName);
-    }
-
-    /**
-     * 获取静态属性值
-     * @param clazz
-     * @param fieldName
-     * @return
-     * @throws ReflectClassException
-     * @throws ReflectFieldException
-     */
-    public static Object getFieldValue(Class<?> clazz, String fieldName) throws ReflectClassException, ReflectFieldException {
-        FastReflectPack pack = getFastReflectPack(clazz);
-        return pack.getFiledValue(null, fieldName);
-    }
-
-    /**
-     * 执行静态无参方法
-     * @param clazz
-     * @param methodName
-     * @return
-     */
-    public static Object methodInvoke(Class<?> clazz, String methodName) throws ReflectClassException, ReflectFieldException, ReflectMethodException {
-        FastReflectPack pack = getFastReflectPack(clazz);
-        return pack.methodInvoke(null, methodName, null, null);
+        Object _o = null;
+        Class _clazz;
+        if (o instanceof Class<?>) {
+            _clazz = (Class) o;
+        } else {
+            _clazz = o.getClass();
+            _o = o;
+        }
+        FastReflectPack pack = getFastReflectPack(_clazz);
+        return pack.getFiledValue(_o, fieldName);
     }
 
     /**
@@ -105,8 +97,16 @@ public class FastReflectUtils {
      * @throws ReflectMethodException
      */
     public static Object methodInvoke(Object o, String methodName) throws ReflectClassException, ReflectFieldException, ReflectMethodException {
-        FastReflectPack pack = getFastReflectPack(o.getClass());
-        return pack.methodInvoke(o, methodName, null, null);
+        Object _o = null;
+        Class _clazz;
+        if (o instanceof Class<?>) {
+            _clazz = (Class) o;
+        } else {
+            _clazz = o.getClass();
+            _o = o;
+        }
+        FastReflectPack pack = getFastReflectPack(_clazz);
+        return pack.methodInvoke(_o, methodName, null, null);
     }
 
     /**
@@ -117,8 +117,16 @@ public class FastReflectUtils {
      * @return
      */
     public static Object methodInvoke(Object o, String methodName, Object[] args) throws ReflectClassException, ReflectFieldException, ReflectMethodException {
-        FastReflectPack pack = getFastReflectPack(o.getClass());
-        return pack.methodInvoke(null, methodName, args, null);
+        Object _o = null;
+        Class _clazz;
+        if (o instanceof Class<?>) {
+            _clazz = (Class) o;
+        } else {
+            _clazz = o.getClass();
+            _o = o;
+        }
+        FastReflectPack pack = getFastReflectPack(_clazz);
+        return pack.methodInvoke(_o, methodName, args, null);
     }
 
     /**
@@ -133,8 +141,16 @@ public class FastReflectUtils {
      * @throws ReflectMethodException
      */
     public static Object methodInvoke(Object o, String methodName, Object[] args, Class<?>[] paramTypes) throws ReflectClassException, ReflectFieldException, ReflectMethodException {
-        FastReflectPack pack = getFastReflectPack(o.getClass());
-        return pack.methodInvoke(null, methodName, args, paramTypes);
+        Object _o = null;
+        Class _clazz;
+        if (o instanceof Class<?>) {
+            _clazz = (Class) o;
+        } else {
+            _clazz = o.getClass();
+            _o = o;
+        }
+        FastReflectPack pack = getFastReflectPack(_clazz);
+        return pack.methodInvoke(_o, methodName, args, paramTypes);
     }
 
     private static FastReflectPack getFastReflectPack(Class<?> clazz) throws ReflectClassException {

@@ -129,15 +129,26 @@ public class MethodReflectModel {
      * @return
      * @throws ReflectMethodException
      */
-    public boolean equals(Object[] args, Class<?>[] paramTypes) {
+    public boolean equals(Object[] args, Class<?>[] paramTypes, boolean force) {
         // 无参
         if ((args == null || args.length <= 0) && (paramTypes == null || paramTypes.length <= 0)) {
             return true;
         }
-        if (paramTypes != null) {
-            return strongVerification(paramTypes);
+        // 强校验
+        if (force) {
+            if (paramTypes != null) {
+                return strongVerification(paramTypes);
+            } else {
+                paramTypes = new Class[args.length];
+                for (int i = 0; i < args.length; i++) {
+                    paramTypes[i] = args[i].getClass();
+                }
+                return strongVerification(paramTypes);
+            }
+        } else {
+            // 弱校验
+            return weakVerification(args);
         }
-        return weakVerification(args);
     }
 
     /**

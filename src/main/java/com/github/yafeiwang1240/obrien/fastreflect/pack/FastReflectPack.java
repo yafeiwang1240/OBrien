@@ -51,8 +51,15 @@ public class FastReflectPack {
         if (models.size() == 1) {
             models.get(0).invoke(o, args);
         }
+        // 先进行强校验
         for (MethodReflectModel model : models) {
-            if (model.equals(args, paramTypes)) {
+            if (model.equals(args, paramTypes, true)) {
+                return model.invoke(o, args);
+            }
+        }
+        // 未找到强匹配方法，进行弱匹配
+        for (MethodReflectModel model : models) {
+            if (model.equals(args, paramTypes, false)) {
                 return model.invoke(o, args);
             }
         }
@@ -68,6 +75,8 @@ public class FastReflectPack {
     private void init(Class<?> clazz) throws ReflectClassException {
         this.classModelCache = new ClassReflectModel(clazz);
         List<Class<?>> classes = classModelCache.getClassList();
+        fields = Lists.newArrayList();
+        methods = Lists.newArrayList();
         for (Class<?> clz : classes) {
             // 属性
             Field[] fields = clz.getDeclaredFields();
