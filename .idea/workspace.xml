@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="添加属性和方法获取">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPoolFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/execption/BeanPoolSizeArgumentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BaseBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BeanMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BeanPack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/FastReflectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/FastReflectUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/pack/FastReflectPack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/pack/FastReflectPack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/MethodReflectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/MethodReflectModel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -21,6 +42,7 @@
         <option value="AnnotationType" />
         <option value="package-info" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -176,7 +198,13 @@
       <workItem from="1564025735358" duration="36000" />
       <workItem from="1564137260159" duration="1138000" />
       <workItem from="1564197978497" duration="13000" />
-      <workItem from="1564382226345" duration="19412000" />
+      <workItem from="1564382226345" duration="19637000" />
+      <workItem from="1564451126323" duration="544000" />
+      <workItem from="1564473516334" duration="94000" />
+      <workItem from="1564485170456" duration="4339000" />
+      <workItem from="1564547845828" duration="5528000" />
+      <workItem from="1564565667579" duration="774000" />
+      <workItem from="1564820235994" duration="5101000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -318,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564400590957</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="添加属性和方法获取">
+      <created>1564401791088</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1564401791088</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -380,7 +415,8 @@
     <MESSAGE value="初始化内多分组" />
     <MESSAGE value="添加java反射优化工具" />
     <MESSAGE value="解决class匹配问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决class匹配问题" />
+    <MESSAGE value="添加属性和方法获取" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加属性和方法获取" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

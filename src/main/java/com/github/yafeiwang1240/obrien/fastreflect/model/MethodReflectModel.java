@@ -131,7 +131,9 @@ public class MethodReflectModel {
      */
     public boolean equals(Object[] args, Class<?>[] paramTypes, boolean force) {
         // 无参
-        if ((args == null || args.length <= 0) && (paramTypes == null || paramTypes.length <= 0)) {
+        if ((this.paramTypes == null || this.paramTypes.length <= 0)
+                &&(args == null || args.length <= 0)
+                && (paramTypes == null || paramTypes.length <= 0)) {
             return true;
         }
         // 强校验
