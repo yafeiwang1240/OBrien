@@ -39,6 +39,7 @@ public class BeanPool<T extends BaseBean> {
         pool = Lists.newArrayList(maximumPoolSize);
         service = Executors.newSingleThreadExecutor();
         lock = new Object[0];
+        poolMonitor = new PoolMonitor();
 
         this.corePoolSize = corePoolSize;
         this.maximumPoolSize = maximumPoolSize;
@@ -57,29 +58,11 @@ public class BeanPool<T extends BaseBean> {
         T bean = null;
         synchronized (lock) {
             BeanMonitor monitor = null;
-            if (pool.size() < corePoolSize) {
-                for (BeanPack p : pool) {
-                    if (!p.getBeanMonitor().isInuse()) {
-                        monitor = p.getBeanMonitor();
-                        bean = (T) p.getBean();
-                        break;
-                    }
-                }
-                if (monitor == null) {
-                    BeanPack pack = new BeanPack();
-                    monitor = new BeanMonitor();
-                    bean = beanFactory.newBean();
-                    pack.setBeanMonitor(monitor);
-                    pack.setBean(bean);
-                    pool.add(pack);
-                }
-            } else {
-                for (BeanPack p : pool) {
-                    if (!p.getBeanMonitor().isInuse()) {
-                        monitor = p.getBeanMonitor();
-                        bean = (T) p.getBean();
-                        break;
-                    }
+            for (BeanPack p : pool) {
+                if (!p.getBeanMonitor().isInuse()) {
+                    monitor = p.getBeanMonitor();
+                    bean = (T) p.getBean();
+                    break;
                 }
             }
             if (monitor == null && pool.size() < maximumPoolSize) {
@@ -97,8 +80,8 @@ public class BeanPool<T extends BaseBean> {
         return bean;
     }
 
-
     private class PoolMonitor implements Runnable {
+
         private boolean exit;
 
         @Override

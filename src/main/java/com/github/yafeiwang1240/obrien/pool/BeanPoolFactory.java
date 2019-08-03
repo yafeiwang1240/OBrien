@@ -10,7 +10,12 @@ import java.util.concurrent.TimeUnit;
  * bean pool factory
  */
 public class BeanPoolFactory {
-    public static <T extends BaseBean> BeanPool<T> newBeanPool(int corePoolSize, int maximumPoolSize, long keepAliveTime, TimeUnit unit, BeanFactory<T> beanFactory) throws BeanPoolSizeArgumentException {
+    public static <T extends BaseBean> BeanPool<T> newBeanPool(int corePoolSize,
+                                                               int maximumPoolSize,
+                                                               long keepAliveTime,
+                                                               TimeUnit unit,
+                                                               BeanFactory<T> beanFactory)
+            throws BeanPoolSizeArgumentException {
         return new BeanPool<>(corePoolSize, maximumPoolSize, keepAliveTime, unit, beanFactory);
     }
 }

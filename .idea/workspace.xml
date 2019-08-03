@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="添加属性和方法获取">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPoolFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/execption/BeanPoolSizeArgumentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BaseBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BeanMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BeanPack.java" afterDir="false" />
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="修改为bean pool内部回调通讯，解决pool监听bug">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/execption/BeanHandlerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/handler/BeanHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/MethodReflectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/MethodReflectModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPoolFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPoolFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BaseBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BaseBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BeanPack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BeanPack.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +40,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="package-info" />
-        <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -204,7 +203,8 @@
       <workItem from="1564485170456" duration="4339000" />
       <workItem from="1564547845828" duration="5528000" />
       <workItem from="1564565667579" duration="774000" />
-      <workItem from="1564820235994" duration="5101000" />
+      <workItem from="1564820235994" duration="5517000" />
+      <workItem from="1564842868915" duration="4273000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -353,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564401791088</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="添加属性和方法获取&#10;添加通用 bean pool">
+      <created>1564825505134</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1564825505134</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -416,7 +423,8 @@
     <MESSAGE value="添加java反射优化工具" />
     <MESSAGE value="解决class匹配问题" />
     <MESSAGE value="添加属性和方法获取" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加属性和方法获取" />
+    <MESSAGE value="添加属性和方法获取&#10;添加通用 bean pool" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加属性和方法获取&#10;添加通用 bean pool" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

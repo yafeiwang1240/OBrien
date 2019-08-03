@@ -5,6 +5,11 @@ import com.github.yafeiwang1240.obrien.fastreflect.FastReflectUtils;
 import com.github.yafeiwang1240.obrien.fastreflect.exception.ReflectClassException;
 import com.github.yafeiwang1240.obrien.fastreflect.exception.ReflectFieldException;
 import com.github.yafeiwang1240.obrien.fastreflect.exception.ReflectMethodException;
+import com.github.yafeiwang1240.obrien.pool.BeanPool;
+import com.github.yafeiwang1240.obrien.pool.BeanPoolFactory;
+import com.github.yafeiwang1240.obrien.pool.execption.BeanPoolSizeArgumentException;
+import com.github.yafeiwang1240.obrien.pool.model.BaseBean;
+import com.github.yafeiwang1240.obrien.pool.model.BeanFactory;
 import com.github.yafeiwang1240.obrien.stacktrace.Verification;
 import com.github.yafeiwang1240.obrien.stacktrace.VerificationResult;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
@@ -22,6 +27,9 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Hello world!
@@ -29,7 +37,43 @@ import java.lang.reflect.Method;
  */
 public class App 
 {
-    public static void main( String[] args ) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, ReflectClassException, ReflectFieldException, ReflectMethodException {
+    public static void main( String[] args ) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, ReflectClassException, ReflectFieldException, ReflectMethodException, BeanPoolSizeArgumentException {
+        test3();
+    }
+
+    public static void test3() throws BeanPoolSizeArgumentException {
+        BeanPool<Session> beanPool = BeanPoolFactory.newBeanPool(2, 5, 2, TimeUnit.MINUTES, new SessionFactory());
+        List<Session> lll = new ArrayList<>();
+        for (int i = 0; i < 13; i++) {
+            Session session = beanPool.getBean();
+            System.out.println(session);
+            if (i % 2 == 0) {
+                if (session != null) session.release();
+            } else {
+                if (session != null) lll.add(session);
+            }
+        }
+    for (int i = 0; i < 4; i++) {
+        lll.get(i).release();
+    }
+        System.out.println("/////////////////////");
+    }
+
+    public static class SessionFactory implements BeanFactory {
+
+        @Override
+        public BaseBean newBean() {
+            return new Session();
+        }
+    }
+
+    public static class Session extends BaseBean {
+        public void print(String v) {
+            System.out.println("hello " + v);
+        }
+    }
+
+    public static void test2() throws Exception {
         Method method = App.class.getMethod("test", Integer.class);
         long t = System.currentTimeMillis();
         for (int i = 0; i < 200000; i++) {

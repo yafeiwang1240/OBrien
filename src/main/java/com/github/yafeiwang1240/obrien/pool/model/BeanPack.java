@@ -10,8 +10,8 @@ public class BeanPack<T extends BaseBean> {
 
     public void setBean(T bean) {
         this.bean = bean;
-        if (this.bean.getMonitor() == null) {
-            this.bean.setMonitor(beanMonitor);
+        if (bean.getHandler() == null) {
+            bean.setHandler(_value -> beanMonitor.setInuse(_value));
         }
     }
 
