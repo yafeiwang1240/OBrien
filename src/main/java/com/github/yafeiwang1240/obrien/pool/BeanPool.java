@@ -55,29 +55,38 @@ public class BeanPool<T extends BaseBean> {
      * @return
      */
     public T getBean() {
+        return getBean(3, TimeUnit.MINUTES);
+    }
+
+    public T getBean(long timeout, TimeUnit unit) {
+        long now = System.currentTimeMillis();
+        long space = unit.toMillis(timeout);
         T bean = null;
-        synchronized (lock) {
-            BeanMonitor monitor = null;
-            for (BeanPack p : pool) {
-                if (!p.getBeanMonitor().isInuse()) {
-                    monitor = p.getBeanMonitor();
-                    bean = (T) p.getBean();
-                    break;
+        while ((System.currentTimeMillis() - now) < space) {
+            synchronized (lock) {
+                BeanMonitor monitor = null;
+                for (BeanPack p : pool) {
+                    if (!p.getBeanMonitor().isInuse()) {
+                        monitor = p.getBeanMonitor();
+                        bean = (T) p.getBean();
+                        break;
+                    }
+                }
+                if (monitor == null && pool.size() < maximumPoolSize) {
+                    BeanPack pack = new BeanPack();
+                    monitor = new BeanMonitor();
+                    bean = beanFactory.newBean();
+                    pack.setBeanMonitor(monitor);
+                    pack.setBean(bean);
+                    pool.add(pack);
+                }
+                if (monitor != null) {
+                    monitor.setInuse(true);
                 }
             }
-            if (monitor == null && pool.size() < maximumPoolSize) {
-                BeanPack pack = new BeanPack();
-                monitor = new BeanMonitor();
-                bean = beanFactory.newBean();
-                pack.setBeanMonitor(monitor);
-                pack.setBean(bean);
-                pool.add(pack);
-            }
-            if (monitor != null) {
-                monitor.setInuse(true);
-            }
+            if (bean != null) return bean;
         }
-        return bean;
+        return null;
     }
 
     private class PoolMonitor implements Runnable {

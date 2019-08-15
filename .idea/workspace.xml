@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="修改为bean pool内部回调通讯，解决pool监听bug">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/DirectedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/node/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/observer/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/EnhanceBeanUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/enums/EnumFieldTransfer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/exception/FieldTransferException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/BeanReflectUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/exception/BeanOperatorException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/FieldAndMethodModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/pack/BeanReflectPack.java" afterDir="false" />
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/Convert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/FieldReflectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/FieldReflectModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/MethodReflectModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/MethodReflectModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BaseBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/model/BaseBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/SuperclassTemplateClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/SuperclassTemplateClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/BeanUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/GroupUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/GroupUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPool.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +202,7 @@
       <workItem from="1565761149351" duration="9860000" />
       <workItem from="1565777185949" duration="1056000" />
       <workItem from="1565783007809" duration="3848000" />
-      <workItem from="1565833711135" duration="22493000" />
+      <workItem from="1565833711135" duration="22842000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -384,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564847177809</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="有向无环图成环判断算法、优化反射工具fastreflect, beanpool算法">
+      <created>1565858186238</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1565858186238</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -449,7 +437,8 @@
     <MESSAGE value="添加属性和方法获取" />
     <MESSAGE value="添加属性和方法获取&#10;添加通用 bean pool" />
     <MESSAGE value="修改为bean pool内部回调通讯，解决pool监听bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改为bean pool内部回调通讯，解决pool监听bug" />
+    <MESSAGE value="有向无环图成环判断算法、优化反射工具fastreflect, beanpool算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="有向无环图成环判断算法、优化反射工具fastreflect, beanpool算法" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
