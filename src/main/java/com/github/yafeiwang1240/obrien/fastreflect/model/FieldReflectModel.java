@@ -4,12 +4,15 @@ import com.github.yafeiwang1240.obrien.fastreflect.exception.ReflectFieldExcepti
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 
 public class FieldReflectModel {
     private String fieldName;
     private Class<?> type;
     private Field field;
     private Annotation[] annotations;
+    private Type[] templates;
 
     public FieldReflectModel(Field field) {
         this.field = field;
@@ -17,6 +20,8 @@ public class FieldReflectModel {
         this.fieldName = field.getName();
         this.type = field.getType();
         this.annotations = field.getDeclaredAnnotations();
+        Type gType = field.getGenericType();
+        this.templates = ((ParameterizedType) gType).getActualTypeArguments();
     }
 
     public String getFieldName() {
@@ -59,6 +64,10 @@ public class FieldReflectModel {
         } catch (Exception e) {
             throw new ReflectFieldException(e.getMessage(), e);
         }
+    }
+
+    public Type[] getTemplates() {
+        return templates;
     }
 
     @Override

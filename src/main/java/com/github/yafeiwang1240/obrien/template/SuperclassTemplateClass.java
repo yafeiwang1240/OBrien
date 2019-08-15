@@ -14,4 +14,6 @@ public abstract class SuperclassTemplateClass<T> {
         Type[] types = ((ParameterizedType) type).getActualTypeArguments();
         return types;
     }
+
+
 }

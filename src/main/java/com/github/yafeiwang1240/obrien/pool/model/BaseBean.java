@@ -1,6 +1,5 @@
 package com.github.yafeiwang1240.obrien.pool.model;
 
-import com.github.yafeiwang1240.obrien.pool.execption.BeanHandlerException;
 import com.github.yafeiwang1240.obrien.pool.handler.BeanHandler;
 
 /**

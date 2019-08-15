@@ -5,11 +5,13 @@ import com.github.yafeiwang1240.obrien.fastreflect.exception.ReflectMethodExcept
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 import java.util.Arrays;
 
 public class MethodReflectModel {
     private String methodName;
     private Class<?>[] paramTypes;
+    private Parameter[] parameters;
     private Class<?> returnType;
     private Class<?>[] exceptionTypes;
     private Annotation[] annotations;
@@ -23,6 +25,7 @@ public class MethodReflectModel {
         this.exceptionTypes = method.getExceptionTypes();
         this.annotations = method.getDeclaredAnnotations();
         this.methodName = method.getName();
+        this.parameters = method.getParameters();
     }
 
     public String getMethodName() {
@@ -57,6 +60,14 @@ public class MethodReflectModel {
             }
         }
         return null;
+    }
+
+    public Parameter[] getParameters() {
+        return parameters;
+    }
+
+    public void setParameters(Parameter[] parameters) {
+        this.parameters = parameters;
     }
 
     /**

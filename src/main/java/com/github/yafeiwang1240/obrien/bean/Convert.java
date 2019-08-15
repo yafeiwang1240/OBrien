@@ -1,7 +1,5 @@
 package com.github.yafeiwang1240.obrien.bean;
 
-import com.github.yafeiwang1240.obrien.uitls.BeanUtils;
-
 /**
  * java bean tools
  */
