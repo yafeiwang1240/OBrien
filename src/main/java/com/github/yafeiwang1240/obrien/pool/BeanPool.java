@@ -7,6 +7,7 @@ import com.github.yafeiwang1240.obrien.pool.model.BaseBean;
 import com.github.yafeiwang1240.obrien.pool.model.BeanFactory;
 import com.github.yafeiwang1240.obrien.pool.model.BeanMonitor;
 import com.github.yafeiwang1240.obrien.pool.model.BeanPack;
+import com.github.yafeiwang1240.obrien.uitls.IOUtils;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -85,6 +86,7 @@ public class BeanPool<T extends BaseBean> {
                 }
             }
             if (bean != null) return bean;
+            IOUtils.sleep(300);
         }
         return null;
     }
