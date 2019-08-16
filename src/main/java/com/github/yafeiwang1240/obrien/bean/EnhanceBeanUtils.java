@@ -70,4 +70,26 @@ public class EnhanceBeanUtils {
         }
         return o;
     }
+
+    /**
+     * 拷贝同名属性
+     * @param from
+     * @param to
+     * @throws FieldTransferException
+     */
+    public static void copy(Object from, Object to) throws FieldTransferException {
+        try {
+            Collection<FieldAndMethodModel> fieldAndMethodModels = BeanReflectUtils.getFieldAndMethods(to.getClass());
+            Class<?> f = from.getClass();
+            for (FieldAndMethodModel model : fieldAndMethodModels) {
+                FieldAndMethodModel fromModel = BeanReflectUtils.getFieldAndMethod(
+                        model.getName(), f);
+                if (fromModel != null) {
+                    model.set(to, fromModel.get(from));
+                }
+            }
+        } catch (Exception e) {
+            throw new FieldTransferException(e.getMessage(), e);
+        }
+    }
 }

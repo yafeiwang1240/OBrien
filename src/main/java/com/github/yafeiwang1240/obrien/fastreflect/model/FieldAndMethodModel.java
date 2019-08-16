@@ -17,6 +17,7 @@ public class FieldAndMethodModel {
     private Method is;
     private Class<?> type;
     private Type[] templates;
+    private String name;
 
     public FieldAndMethodModel(Field field, Method set, Method get, Method is) {
         this.field = field;
@@ -34,6 +35,7 @@ public class FieldAndMethodModel {
         } catch (Exception e) {
             templates = new Class[]{Object.class};
         }
+        this.name = this.field.getName();
     }
 
     /**
@@ -74,6 +76,10 @@ public class FieldAndMethodModel {
 
     public Type[] getTemplates() {
         return templates;
+    }
+
+    public String getName() {
+        return name;
     }
 
     /**
