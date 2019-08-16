@@ -2,8 +2,10 @@ package com.github.yafeiwang1240;
 
 import com.github.yafeiwang1240.obrien.algorithm.DirectedGraph;
 import com.github.yafeiwang1240.obrien.algorithm.node.ListNode;
+import com.github.yafeiwang1240.obrien.algorithm.node.ListNodeObserverAndSubject;
 import com.github.yafeiwang1240.obrien.bean.Convert;
 import com.github.yafeiwang1240.obrien.bean.EnhanceBeanUtils;
+import com.github.yafeiwang1240.obrien.bean.enums.EnumFieldTransfer;
 import com.github.yafeiwang1240.obrien.fastreflect.BeanReflectUtils;
 import com.github.yafeiwang1240.obrien.fastreflect.FastReflectUtils;
 import com.github.yafeiwang1240.obrien.fastreflect.pack.BeanReflectPack;
@@ -49,7 +51,46 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        test10();
+        test12();
+    }
+
+    public static void test12() {
+        EnumFieldTransfer transfer = EnumFieldTransfer.getInstance(C.class);
+        System.out.println(transfer);
+    }
+
+    public static class A {
+        protected String name;
+    }
+
+    public static class B extends A {
+    }
+
+    public static class C extends A {
+    }
+
+    public static void test11() {
+        ListNodeObserverAndSubject node1 = new ListNodeObserverAndSubject("1");
+        ListNodeObserverAndSubject node2 = new ListNodeObserverAndSubject("2");
+        ListNodeObserverAndSubject node3 = new ListNodeObserverAndSubject("3");
+        ListNodeObserverAndSubject node4 = new ListNodeObserverAndSubject("4");
+        ListNodeObserverAndSubject node5 = new ListNodeObserverAndSubject("5");
+        ListNodeObserverAndSubject node6 = new ListNodeObserverAndSubject("6");
+        node6.addObserver(node1);
+        node1.addSubject(node6);
+        node2.addObserver(node1);
+        node1.addSubject(node2);
+        node2.addObserver(node3);
+        node3.addSubject(node2);
+        node3.addObserver(node5);
+        node5.addSubject(node3);
+        node5.addObserver(node1);
+        node1.addSubject(node5);
+        node1.addObserver(node4);
+        node4.addSubject(node1);
+
+        boolean r = DirectedGraph.ring(Lists.asList(node1, node2, node3, node4, node5, node6));
+        System.out.println(r);
     }
 
     public static void test10() {

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="节点成环判定">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/node/ListNodeObserverAndSubject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/pool/BeanPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/DirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/enums/EnumFieldTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/enums/EnumFieldTransfer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +206,9 @@
       <workItem from="1565777185949" duration="1056000" />
       <workItem from="1565783007809" duration="3848000" />
       <workItem from="1565833711135" duration="22890000" />
-      <workItem from="1565869449290" duration="76000" />
+      <workItem from="1565869449290" duration="565000" />
+      <workItem from="1565920661742" duration="4477000" />
+      <workItem from="1565925925557" duration="1826000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -380,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565858477816</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="bean pool get sleep 300ms">
+      <created>1565869584544</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1565869584544</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -447,7 +459,8 @@
     <MESSAGE value="修改为bean pool内部回调通讯，解决pool监听bug" />
     <MESSAGE value="有向无环图成环判断算法、优化反射工具fastreflect, beanpool算法" />
     <MESSAGE value="bean pool 添加阻塞获取方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="bean pool 添加阻塞获取方法" />
+    <MESSAGE value="bean pool get sleep 300ms" />
+    <option name="LAST_COMMIT_MESSAGE" value="bean pool get sleep 300ms" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
