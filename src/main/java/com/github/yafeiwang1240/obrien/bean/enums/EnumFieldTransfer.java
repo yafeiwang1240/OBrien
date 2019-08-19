@@ -14,6 +14,46 @@ import java.util.*;
  */
 public enum EnumFieldTransfer {
 
+    ENUM(Enum.class) {
+        @Override
+        public Object toMap(Object o) {
+            return o == null ? null : o.toString();
+        }
+
+        @Override
+        public Object toObject(Object o, Class type) throws FieldTransferException {
+            if (type == null || (type != Enum.class)) {
+                if (type == Object.class) return o == null ? null : o.toString();
+                throw new FieldTransferException("无效的type: " + type);
+            }
+            if (o == null) return null;
+            if (o instanceof Enum) {
+                return (Enum) o;
+            }
+            Object r = null;
+            try {
+                r = Enum.valueOf(type, o.toString());
+            } catch (Exception e) {
+                // ignore
+            }
+            if (r == null) {
+                try {
+                    r = Enum.valueOf(type, o.toString().toUpperCase());
+                } catch (Exception e) {
+                    // ignore
+                }
+            }
+            if (r == null) {
+                try {
+                    r = Enum.valueOf(type, o.toString().toLowerCase());
+                } catch (Exception e) {
+                    // ignore
+                }
+            }
+            return r;
+        }
+    },
+
     BOOLEAN(Boolean.class){
         @Override
         public Object toMap(Object o) {

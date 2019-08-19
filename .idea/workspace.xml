@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="节点成环判定">
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="同名属性拷贝，由方法到属性值直接获取">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/DirectedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/EnhanceBeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/EnhanceBeanUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/FieldAndMethodModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/fastreflect/model/FieldAndMethodModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/enums/EnumFieldTransfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/enums/EnumFieldTransfer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/model/InitializePack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/initialization/model/InitializePack.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +207,9 @@
       <workItem from="1565833711135" duration="22890000" />
       <workItem from="1565869449290" duration="565000" />
       <workItem from="1565920661742" duration="4477000" />
-      <workItem from="1565925925557" duration="3587000" />
+      <workItem from="1565925925557" duration="3774000" />
+      <workItem from="1566183142625" duration="1159000" />
+      <workItem from="1566205927945" duration="454000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -398,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565927873303</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="同名属性拷贝，由方法到属性值直接获取">
+      <created>1565930618166</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1565930618166</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
@@ -441,7 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bean Tools" />
     <MESSAGE value="实现同步状态转换机" />
     <MESSAGE value="序列化和反序列化的封装" />
     <MESSAGE value="自动分配算法实现&#10;堆栈追踪校验&#10;Bean校验框架" />
@@ -466,7 +474,8 @@
     <MESSAGE value="bean pool 添加阻塞获取方法" />
     <MESSAGE value="bean pool get sleep 300ms" />
     <MESSAGE value="有向无环图成环判断" />
-    <option name="LAST_COMMIT_MESSAGE" value="有向无环图成环判断" />
+    <MESSAGE value="同名属性拷贝，由方法到属性值直接获取" />
+    <option name="LAST_COMMIT_MESSAGE" value="同名属性拷贝，由方法到属性值直接获取" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

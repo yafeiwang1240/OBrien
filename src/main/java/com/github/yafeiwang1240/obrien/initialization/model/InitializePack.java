@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class InitializePack {
 
@@ -80,7 +81,7 @@ public class InitializePack {
         }
     }
 
-    public void initialize(String group, Object o) throws InitializedFailedException{
+    public void initialize(String group, Object o) throws InitializedFailedException {
         List<FieldInitializedExecutor> fieldInitializer;
         if ((fieldInitializer = fieldInitializerCache.get(group)) != null) {
             for (FieldInitializedExecutor _value : fieldInitializer) {
@@ -89,23 +90,19 @@ public class InitializePack {
         }
         List<Method> methodInitializer;
         if ((methodInitializer = methodInitializerCache.get(group)) != null) {
-            methodInitializer.forEach(v -> {
+            for (Method method : methodInitializer) {
                 try {
-                    v.invoke(o);
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                } catch (InvocationTargetException e) {
-                    e.printStackTrace();
+                    method.invoke(o);
+                } catch (IllegalAccessException | InvocationTargetException e) {
+                    throw new InitializedFailedException(e.getMessage(), e);
                 }
-            });
+            }
         }
         List<Initialized> initializeds = initializedCache.get(group);
-        if (initializeds != null) initializeds.forEach(_value -> {
-            try {
-                _value.execute(o);
-            } catch (InitializedFailedException e) {
-                e.printStackTrace();
+        if (initializeds != null && initializeds.size() > 0) {
+            for (Initialized value : initializeds) {
+                value.execute(o);
             }
-        });
+        }
     }
 }
