@@ -2,6 +2,7 @@ package com.github.yafeiwang1240.obrien.lang;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.function.Supplier;
 
 public class Sets {
 

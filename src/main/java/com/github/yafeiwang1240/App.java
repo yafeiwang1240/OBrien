@@ -51,7 +51,12 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        test9();
+//        test9();
+        Object str1 = new String("hhhh");
+        Object str2 = new String("hhhh");
+        Object str3 = "hhhh";
+        System.out.println(str1.equals(str2));
+        System.out.println(str1.equals(str3));
     }
 
     public static void test12() {
