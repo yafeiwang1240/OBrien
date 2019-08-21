@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="" />
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/LeastSquareMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/Math.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/node/Coordinate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/algorithm/result/FittingResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +213,9 @@
       <workItem from="1566205927945" duration="632000" />
       <workItem from="1566355684120" duration="902000" />
       <workItem from="1566356596692" duration="1086000" />
+      <workItem from="1566358160452" duration="217000" />
+      <workItem from="1566376896516" duration="2283000" />
+      <workItem from="1566383059789" duration="128000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -425,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566357758730</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="堆栈追踪命名规范">
+      <created>1566358345876</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1566358345876</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
@@ -468,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="解决Arrays.asList(T... a)生成ArrayList&lt;&gt;无add方法的bug" />
     <MESSAGE value="版本更新" />
     <MESSAGE value="新增IO阻塞方法" />
     <MESSAGE value="githup -&gt; github" />
@@ -493,7 +508,8 @@
     <MESSAGE value="同名属性拷贝，由方法到属性值直接获取添加支持枚举类型" />
     <MESSAGE value="{key, value} -&gt; toMap" />
     <MESSAGE value="简化cast" />
-    <option name="LAST_COMMIT_MESSAGE" value="简化cast" />
+    <MESSAGE value="堆栈追踪命名规范" />
+    <option name="LAST_COMMIT_MESSAGE" value="堆栈追踪命名规范" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
