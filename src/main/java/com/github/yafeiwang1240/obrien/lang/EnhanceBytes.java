@@ -76,35 +76,35 @@ public class EnhanceBytes {
 
         try {
             if (Boolean.class.isAssignableFrom(clazz) || (clazz.isPrimitive() && StringUtils.equals(clazz.getName(), "boolean"))) {
-                return cast(clazz, Bytes.toBoolean(bytes));
+                return cast(Bytes.toBoolean(bytes));
             }
             if (Byte.class.isAssignableFrom(clazz) || (clazz.isPrimitive() && StringUtils.equals(clazz.getName(), "byte"))) {
-                return cast(clazz, (byte) Bytes.toShort(bytes));
+                return cast((byte) Bytes.toShort(bytes));
             }
             if (Short.class.isAssignableFrom(clazz) || (clazz.isPrimitive() && StringUtils.equals(clazz.getName(), "short"))) {
-                return cast(clazz, Bytes.toShort(bytes));
+                return cast(Bytes.toShort(bytes));
             }
             if (Integer.class.isAssignableFrom(clazz) || (clazz.isPrimitive() && StringUtils.equals(clazz.getName(), "int"))) {
-                return cast(clazz, Bytes.toInt(bytes));
+                return cast(Bytes.toInt(bytes));
             }
             if (Long.class.isAssignableFrom(clazz) || (clazz.isPrimitive() && StringUtils.equals(clazz.getName(), "long"))) {
-                return cast(clazz, Bytes.toLong(bytes));
+                return cast(Bytes.toLong(bytes));
             }
             if (Float.class.isAssignableFrom(clazz) || (clazz.isPrimitive() && StringUtils.equals(clazz.getName(), "float"))) {
-                return cast(clazz, Bytes.toFloat(bytes));
+                return cast(Bytes.toFloat(bytes));
             }
             if (Double.class.isAssignableFrom(clazz) || (clazz.isPrimitive() && StringUtils.equals(clazz.getName(), "double"))) {
-                return cast(clazz, Bytes.toDouble(bytes));
+                return cast(Bytes.toDouble(bytes));
             }
             if (String.class.isAssignableFrom(clazz)) {
-                return cast(clazz, Bytes.toString(bytes));
+                return cast(Bytes.toString(bytes));
             }
         } catch (CastTypeException e) {
             throw new ToTemplateException(e);
         }
 
         try {
-            return cast(clazz, SerializableUtils.deserialization(bytes));
+            return cast(SerializableUtils.deserialization(bytes));
         } catch (SerializationException e) {
             throw new ToTemplateException(e);
         } catch (CastTypeException e) {
@@ -112,7 +112,7 @@ public class EnhanceBytes {
         }
     }
 
-    private static <T> T cast(Class<T> clazz, Object obj) throws CastTypeException {
+    private static <T> T cast(Object obj) throws CastTypeException {
         return (T) obj;
     }
 }

@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Lists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Lists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Maps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Maps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Sets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Sets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Supplier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/EnhanceBytes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/EnhanceBytes.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,6 +209,7 @@
       <workItem from="1566183142625" duration="1159000" />
       <workItem from="1566205927945" duration="632000" />
       <workItem from="1566355684120" duration="902000" />
+      <workItem from="1566356596692" duration="949000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -417,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566206505009</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="{key, value} -&gt; toMap">
+      <created>1566356688370</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1566356688370</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -460,7 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="序列化和反序列化的封装" />
     <MESSAGE value="自动分配算法实现&#10;堆栈追踪校验&#10;Bean校验框架" />
     <MESSAGE value="解决Arrays.asList(T... a)生成ArrayList&lt;&gt;无add方法的bug" />
     <MESSAGE value="版本更新" />
@@ -485,7 +488,8 @@
     <MESSAGE value="有向无环图成环判断" />
     <MESSAGE value="同名属性拷贝，由方法到属性值直接获取" />
     <MESSAGE value="同名属性拷贝，由方法到属性值直接获取添加支持枚举类型" />
-    <option name="LAST_COMMIT_MESSAGE" value="同名属性拷贝，由方法到属性值直接获取添加支持枚举类型" />
+    <MESSAGE value="{key, value} -&gt; toMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="{key, value} -&gt; toMap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
