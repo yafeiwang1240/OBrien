@@ -9,6 +9,8 @@ import com.github.yafeiwang1240.obrien.pool.model.BeanMonitor;
 import com.github.yafeiwang1240.obrien.pool.model.BeanPack;
 import com.github.yafeiwang1240.obrien.uitls.IOUtils;
 
+import java.io.Closeable;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -18,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  * bean pool
  * @param <T>
  */
-public class BeanPool<T extends BaseBean> {
+public class BeanPool<T extends BaseBean> implements Closeable {
 
     // 缓冲时间
     private static long BumperTime = 3141;
@@ -89,6 +91,12 @@ public class BeanPool<T extends BaseBean> {
             IOUtils.sleep(300);
         }
         return null;
+    }
+
+    @Override
+    public void close() throws IOException {
+        poolMonitor.stop();
+        service.shutdown();
     }
 
     private class PoolMonitor implements Runnable {
