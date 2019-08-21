@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 /**
  * 校验器
  */
-public class Verification {
+public class VerificationUtils {
     /**
      * 堆栈校验
      * @param from

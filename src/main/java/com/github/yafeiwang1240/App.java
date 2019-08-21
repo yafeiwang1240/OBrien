@@ -20,7 +20,7 @@ import com.github.yafeiwang1240.obrien.pool.BeanPoolFactory;
 import com.github.yafeiwang1240.obrien.pool.execption.BeanPoolSizeArgumentException;
 import com.github.yafeiwang1240.obrien.pool.model.BaseBean;
 import com.github.yafeiwang1240.obrien.pool.model.BeanFactory;
-import com.github.yafeiwang1240.obrien.stacktrace.Verification;
+import com.github.yafeiwang1240.obrien.stacktrace.VerificationUtils;
 import com.github.yafeiwang1240.obrien.stacktrace.VerificationResult;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
@@ -404,7 +404,7 @@ public class App
     public static void valid(Class clazz) {
         VerificationResult result = null;
         try {
-            result = Verification.validStack(clazz, App.class, App.class.getDeclaredMethod("valid", Class.class));
+            result = VerificationUtils.validStack(clazz, App.class, App.class.getDeclaredMethod("valid", Class.class));
         } catch (NoSuchMethodException e) {
             System.out.println(e.getMessage());
         }
