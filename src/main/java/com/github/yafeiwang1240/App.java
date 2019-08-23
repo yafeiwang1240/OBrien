@@ -15,6 +15,7 @@ import com.github.yafeiwang1240.obrien.initialization.annotation.Initializer;
 import com.github.yafeiwang1240.obrien.initialization.annotation.InitializerGroup;
 import com.github.yafeiwang1240.obrien.initialization.execution.InitializedFailedException;
 import com.github.yafeiwang1240.obrien.lang.Lists;
+import com.github.yafeiwang1240.obrien.lang.Maths;
 import com.github.yafeiwang1240.obrien.pool.BeanPool;
 import com.github.yafeiwang1240.obrien.pool.BeanPoolFactory;
 import com.github.yafeiwang1240.obrien.pool.execption.BeanPoolSizeArgumentException;
@@ -51,7 +52,19 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-//        test9();
+        test14();
+    }
+
+    public static void test14() throws Maths.NoValueFieldException, Maths.ObtainFieldValueException, Maths.AttachFieldValueException {
+
+        String i1 = new String("我是i1");
+        String i2 = new String("我是i2");
+        Maths.swap(i1, i2);
+        System.out.println(i1);
+        System.out.println(i2);
+    }
+
+    public static void test13() {
         Object str1 = new String("hhhh");
         Object str2 = new String("hhhh");
         Object str3 = "hhhh";
