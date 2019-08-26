@@ -4,6 +4,7 @@ import com.github.yafeiwang1240.obrien.algorithm.DirectedGraph;
 import com.github.yafeiwang1240.obrien.algorithm.node.ListNode;
 import com.github.yafeiwang1240.obrien.algorithm.node.ListNodeObserverAndSubject;
 import com.github.yafeiwang1240.obrien.bean.BeanUtils;
+import com.github.yafeiwang1240.obrien.bean.ClassUtils;
 import com.github.yafeiwang1240.obrien.bean.Convert;
 import com.github.yafeiwang1240.obrien.bean.EnhanceBeanUtils;
 import com.github.yafeiwang1240.obrien.bean.enums.EnumFieldTransfer;
@@ -34,7 +35,9 @@ import com.github.yafeiwang1240.obrien.validation.annotation.NotNull;
 import com.github.yafeiwang1240.obrien.validation.annotation.UserDefined;
 import com.github.yafeiwang1240.obrien.validation.exception.ValidateInitialException;
 import com.github.yafeiwang1240.obrien.validation.model.ValidateResult;
+import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
 import java.lang.reflect.Field;
@@ -54,11 +57,26 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        test16();
+        Class cls = ClassUtils.getClass("org.slf4j.LoggerFactory");
+        System.out.println(cls);
+        System.out.println(LoggerFactory.class);
+        System.out.println(LoggerFactory.class == cls);
     }
 
-    public static void test16() {
-        URL root = BeanUtils.class.getResource("/");
+    public static void test17(File file) throws ClassNotFoundException {
+        File[] files = file.listFiles();
+        for (File f : files) {
+            if (f.isDirectory()) {
+                System.out.println(f.getPath());
+                test17(f);
+            } else {
+                System.out.println(f.getName());
+            }
+        }
+    }
+
+    public static void test16() throws ClassNotFoundException {
+        URL root = LoggerFactory.class.getResource("/");
         URL current1 = App.class.getResource("");
         URL current2 = App.class.getResource(".");
         URL parent = App.class.getResource("..");
@@ -71,6 +89,7 @@ public class App
         System.out.println("parent = " + parent);
         System.out.println("self1 = " + self1);
         System.out.println("self2 = " + self2);
+        test17(new File(root.getFile()));
     }
 
     public static void test15() {
