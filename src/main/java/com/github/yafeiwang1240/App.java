@@ -3,6 +3,7 @@ package com.github.yafeiwang1240;
 import com.github.yafeiwang1240.obrien.algorithm.DirectedGraph;
 import com.github.yafeiwang1240.obrien.algorithm.node.ListNode;
 import com.github.yafeiwang1240.obrien.algorithm.node.ListNodeObserverAndSubject;
+import com.github.yafeiwang1240.obrien.bean.BeanUtils;
 import com.github.yafeiwang1240.obrien.bean.Convert;
 import com.github.yafeiwang1240.obrien.bean.EnhanceBeanUtils;
 import com.github.yafeiwang1240.obrien.bean.enums.EnumFieldTransfer;
@@ -40,6 +41,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -52,7 +54,29 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        test14();
+        test16();
+    }
+
+    public static void test16() {
+        URL root = BeanUtils.class.getResource("/");
+        URL current1 = App.class.getResource("");
+        URL current2 = App.class.getResource(".");
+        URL parent = App.class.getResource("..");
+        URL self1 = App.class.getResource("App.class");
+        URL self2 = App.class.getResource("./App.class");
+
+        System.out.println("root = " + root);
+        System.out.println("current1 = " + current1);
+        System.out.println("current2 = " + current2);
+        System.out.println("parent = " + parent);
+        System.out.println("self1 = " + self1);
+        System.out.println("self2 = " + self2);
+    }
+
+    public static void test15() {
+        System.out.println(A.class.isAssignableFrom(C.class));
+        System.out.println(A.class.isAssignableFrom(B.class));
+        System.out.println(App.class.isAssignableFrom(A.class));
     }
 
     public static void test14() throws Maths.NoValueFieldException, Maths.ObtainFieldValueException, Maths.AttachFieldValueException {
