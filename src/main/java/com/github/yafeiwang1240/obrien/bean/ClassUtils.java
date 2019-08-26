@@ -5,7 +5,9 @@ import com.github.yafeiwang1240.obrien.bean.exception.NonParameterConstructorExc
 
 import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -13,9 +15,11 @@ import java.util.Map;
  */
 public class ClassUtils {
 
-    private static final ApplicationBeanContext beanContext = new ApplicationBeanContext();
+    private static final ApplicationContext beanContext = new ApplicationContext();
 
     private static final Map<String, Class<?>> classCache = new HashMap<>();
+
+    private static final Map<String, List<Class<?>>> packageClassCache = new HashMap<>();
 
     static {
         URL root = ClassUtils.class.getResource("/");
@@ -79,9 +83,40 @@ public class ClassUtils {
         }
         return getBean(clazz);
     }
-
+    /**
+     * 根据package.BeanName获取class
+     * @param name
+     * @return
+     */
     public static Class<?> getClass(String name) {
         return classCache.get(name);
+    }
+
+    /**
+     * 根据packageName获取包下class
+     * @param packageName
+     * @return
+     */
+    public static List<Class<?>> getPackageClasses(String packageName) {
+        List<Class<?>> result = null;
+        if ((result = packageClassCache.get(packageName)) == null) {
+            result = getAndCachePackageClasses(packageName);
+        }
+        return new ArrayList<>(result);
+    }
+
+    private synchronized static List<Class<?>> getAndCachePackageClasses(String packageName) {
+        if (packageClassCache.containsKey(packageName)) {
+            return packageClassCache.get(packageName);
+        }
+        List<Class<?>> list = new ArrayList<>();
+        packageClassCache.put(packageName, list);
+        for (Map.Entry<String, Class<?>> entry : classCache.entrySet()) {
+            if (entry.getKey().startsWith(packageName)) {
+                list.add(entry.getValue());
+            }
+        }
+        return list;
     }
 
     private synchronized static <T> T getAndCacheBean(Class<T> requiredType) throws NonParameterConstructorException {

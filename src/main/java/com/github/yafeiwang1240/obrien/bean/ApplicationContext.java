@@ -6,7 +6,20 @@ import java.util.Map;
 /**
  * application bean context
  */
-public class ApplicationBeanContext {
+public class ApplicationContext {
+
+    private static ApplicationContext instance;
+
+    public static ApplicationContext getInstance() {
+        if (instance == null) {
+            synchronized (ApplicationContext.class) {
+                if (instance == null) {
+                    instance = new ApplicationContext();
+                }
+            }
+        }
+        return instance;
+    }
 
     private Map<Class<?>, Object> beanCache = new HashMap<>();
 
