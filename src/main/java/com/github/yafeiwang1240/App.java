@@ -3,7 +3,6 @@ package com.github.yafeiwang1240;
 import com.github.yafeiwang1240.obrien.algorithm.DirectedGraph;
 import com.github.yafeiwang1240.obrien.algorithm.node.ListNode;
 import com.github.yafeiwang1240.obrien.algorithm.node.ListNodeObserverAndSubject;
-import com.github.yafeiwang1240.obrien.bean.BeanUtils;
 import com.github.yafeiwang1240.obrien.bean.ClassUtils;
 import com.github.yafeiwang1240.obrien.bean.Convert;
 import com.github.yafeiwang1240.obrien.bean.EnhanceBeanUtils;
@@ -23,8 +22,8 @@ import com.github.yafeiwang1240.obrien.pool.BeanPoolFactory;
 import com.github.yafeiwang1240.obrien.pool.execption.BeanPoolSizeArgumentException;
 import com.github.yafeiwang1240.obrien.pool.model.BaseBean;
 import com.github.yafeiwang1240.obrien.pool.model.BeanFactory;
-import com.github.yafeiwang1240.obrien.stacktrace.VerificationUtils;
 import com.github.yafeiwang1240.obrien.stacktrace.VerificationResult;
+import com.github.yafeiwang1240.obrien.stacktrace.VerificationUtils;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
 import com.github.yafeiwang1240.obrien.template.InterfaceTemplateClass;
@@ -57,6 +56,10 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
+        test15();
+    }
+
+    public static void test18() {
         Class cls = ClassUtils.getClass("org.slf4j.LoggerFactory");
         System.out.println(cls);
         System.out.println(LoggerFactory.class);
@@ -127,7 +130,7 @@ public class App
     public static class B extends A {
     }
 
-    public static class C extends A {
+    public static class C extends B {
     }
 
     public static void test11() {

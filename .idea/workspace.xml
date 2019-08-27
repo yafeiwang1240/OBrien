@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/lang/Maths.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/ApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/bean/ApplicationContext.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -223,7 +223,14 @@
       <workItem from="1566527646210" duration="87000" />
       <workItem from="1566530513541" duration="4930000" />
       <workItem from="1566550053105" duration="1368000" />
-      <workItem from="1566551449759" duration="1603000" />
+      <workItem from="1566551449759" duration="2355000" />
+      <workItem from="1566784648345" duration="711000" />
+      <workItem from="1566799095386" duration="1974000" />
+      <workItem from="1566801602509" duration="7773000" />
+      <workItem from="1566809556307" duration="308000" />
+      <workItem from="1566819885825" duration="2285000" />
+      <workItem from="1566823746266" duration="49000" />
+      <workItem from="1566886026515" duration="505000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -463,7 +470,35 @@
       <option name="project" value="LOCAL" />
       <updated>1566387321904</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="java maths">
+      <created>1566553659797</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1566553659797</updated>
+    </task>
+    <task id="LOCAL-00036" summary="class utils">
+      <created>1566801482760</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1566801482760</updated>
+    </task>
+    <task id="LOCAL-00037" summary="class utils">
+      <created>1566809366191</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1566809366191</updated>
+    </task>
+    <task id="LOCAL-00038" summary="package class get">
+      <created>1566821061565</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1566821061565</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -506,9 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="githup -&gt; github" />
-    <MESSAGE value="增加初始化封装" />
-    <MESSAGE value="属性验证分区" />
     <MESSAGE value="属性验证分区&#10;添加初始化机制" />
     <MESSAGE value="添加类初始化操作" />
     <MESSAGE value="初始化分组" />
@@ -531,7 +563,10 @@
     <MESSAGE value="堆栈追踪命名规范" />
     <MESSAGE value="最小二乘法" />
     <MESSAGE value="bean pool close" />
-    <option name="LAST_COMMIT_MESSAGE" value="bean pool close" />
+    <MESSAGE value="java maths" />
+    <MESSAGE value="class utils" />
+    <MESSAGE value="package class get" />
+    <option name="LAST_COMMIT_MESSAGE" value="package class get" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
