@@ -8,6 +8,10 @@ import java.util.Map;
  */
 public class ApplicationContext {
 
+    private Map<Class<?>, Object> assignCache = new HashMap<>();
+
+    private Map<Class<?>, Object> beanCache = new HashMap<>();
+
     private static ApplicationContext instance;
 
     public static ApplicationContext getInstance() {
@@ -20,10 +24,6 @@ public class ApplicationContext {
         }
         return instance;
     }
-
-    private Map<Class<?>, Object> assignCache = new HashMap<>();
-
-    private Map<Class<?>, Object> beanCache = new HashMap<>();
 
     public <T> T getBean(Class<T> requiredType) {
         if (beanCache.containsKey(requiredType)) {
