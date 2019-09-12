@@ -26,6 +26,7 @@ import com.github.yafeiwang1240.obrien.stacktrace.VerificationResult;
 import com.github.yafeiwang1240.obrien.stacktrace.VerificationUtils;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
+import com.github.yafeiwang1240.obrien.uitls.DateUtils;
 import com.github.yafeiwang1240.obrien.validation.IValidator;
 import com.github.yafeiwang1240.obrien.validation.ValidationUtils;
 import com.github.yafeiwang1240.obrien.validation.annotation.Length;
@@ -55,7 +56,10 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        test19();
+        System.out.println(DateUtils.toString(DateUtils.parseDate((new java.util.Date()).toString())));
+        System.out.println(DateUtils.toString(DateUtils.parseDate(System.currentTimeMillis())));
+        System.out.println(DateUtils.toString(DateUtils.parseDate(10000000L)));
+        System.out.println(DateUtils.toString(DateUtils.parseDate("2019-09-01 00:20:00")));
     }
 
     public static void test19() {
