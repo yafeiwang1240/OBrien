@@ -1,4 +1,4 @@
-package com.github.yafeiwang1240.obrien.exception;
+package com.github.yafeiwang1240.obrien.bean.exception;
 
 /**
  * 类型异常信息

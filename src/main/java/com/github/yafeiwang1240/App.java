@@ -26,7 +26,6 @@ import com.github.yafeiwang1240.obrien.stacktrace.VerificationResult;
 import com.github.yafeiwang1240.obrien.stacktrace.VerificationUtils;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
-import com.github.yafeiwang1240.obrien.template.InterfaceTemplateClass;
 import com.github.yafeiwang1240.obrien.validation.IValidator;
 import com.github.yafeiwang1240.obrien.validation.ValidationUtils;
 import com.github.yafeiwang1240.obrien.validation.annotation.Length;
@@ -56,7 +55,20 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        test15();
+        test19();
+    }
+
+    public static void test19() {
+        String html = "<!DOCTYPE html><html xmlns:ng=\"\" xmlns:tb=\"\"><head ng-csp><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta name=\"viewport\" content=\"width=1024, maximum-scale=2\"><meta name=\"format-detection\" content=\"telephone=no\"><meta name=\"vizportal-config\" data-buildId=\"2018_3_7_zby30d2rnmb\" data-staticAssetsUrlPrefix=\"\"><link rel=\"stylesheet\" type=\"text/css\" href=\"vizportal.css?2018_3_7_zby30d2rnmb\"><script src=\"/javascripts/api/tableau-2.2.2.min.js?2018_3_7_zby30d2rnmb\"></script><script src=\"vizportalMinLibs.js?2018_3_7_zby30d2rnmb\"></script><script src=\"vizportal.min.js?2018_3_7_zby30d2rnmb\"></script></head><body class=\"tb-body\"><div ng-app=\"VizPortalRun\" id=\"ng-app\" tb-window-resize class=\"tb-app\"><div ui-view=\"\" class=\"tb-app-inner\"></div><tb:react-toaster></tb:react-toaster><script type=\"text/ng-template\" id=\"inline_stackedElement.html\"><div tb-window-resize tb-left=\"left\" tb-top=\"top\" tb-right=\"right\" tb-bottom=\"bottom\" tb-visible=\"visible\" class=\"tb-absolute\"></div></script><tb:stacked-elements></tb:stacked-elements></div></body></html>";
+        String script = "<script>(function(){window.makeWM=function(t){var e=document.body,i=\"200px\",a=\"100px\",n=\"center\",o=\"middle\",r=\"12px microsoft yahei\",l=\"rgba(184, 184, 184, 0.8)\",s=\"10\",d=1e3;var u=document.createElement(\"canvas\");u.setAttribute(\"width\",i);u.setAttribute(\"height\",a);var c=u.getContext(\"2d\");c.textAlign=n;c.textBaseline=o;c.font=r;c.fillStyle=l;c.rotate(Math.PI/180*s);c.fillText(t,parseFloat(i)/2,parseFloat(a)/2);var p=u.toDataURL();var g=document.createElement(\"div\");g.setAttribute(\"style\",\"position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;background-repeat:repeat;background-image:url(\"+p+\");z-index:\"+d+\";\");e.style.position=\"relative\";e.insertBefore(g,e.firstChild)}})();makeWM(\"wangyafei\");</script>";
+        int index = html.indexOf("</html>");
+        System.out.println(index);
+        if (index != -1) {
+            System.out.print(String.valueOf(html.toCharArray(), 0, index));
+            System.out.print(script);
+            System.out.print("</html>");
+        }
+        System.out.println();
     }
 
     public static void test18() {
@@ -382,9 +394,6 @@ public class App
         System.out.print(value);
     }
 
-    public static class TT implements InterfaceTemplateClass<App> {
-
-    }
     public static void test1() {
         DD dd = App.class.getDeclaredAnnotation(DD.class);
     }

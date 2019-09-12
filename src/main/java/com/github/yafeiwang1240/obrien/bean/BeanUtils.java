@@ -1,6 +1,6 @@
 package com.github.yafeiwang1240.obrien.bean;
 
-import com.github.yafeiwang1240.obrien.exception.UnMatchedTypeException;
+import com.github.yafeiwang1240.obrien.bean.exception.UnMatchedTypeException;
 import com.github.yafeiwang1240.obrien.lang.Lists;
 import com.github.yafeiwang1240.obrien.lang.Maps;
 

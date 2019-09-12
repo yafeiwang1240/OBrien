@@ -1,4 +1,4 @@
-package com.github.yafeiwang1240.obrien.exception;
+package com.github.yafeiwang1240.obrien.lang.exception;
 
 /**
  * 反序列化类型异常

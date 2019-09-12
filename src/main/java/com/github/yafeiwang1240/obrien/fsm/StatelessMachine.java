@@ -1,6 +1,5 @@
 package com.github.yafeiwang1240.obrien.fsm;
 
-import com.github.yafeiwang1240.obrien.exception.UnSupportedEventException;
 import com.github.yafeiwang1240.obrien.lang.Lists;
 import com.github.yafeiwang1240.obrien.lang.Maps;
 

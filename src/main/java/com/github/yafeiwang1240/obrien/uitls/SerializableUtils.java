@@ -1,6 +1,6 @@
 package com.github.yafeiwang1240.obrien.uitls;
 
-import com.github.yafeiwang1240.obrien.exception.SerializationException;
+import com.github.yafeiwang1240.obrien.uitls.exception.SerializationException;
 
 import java.io.*;
 

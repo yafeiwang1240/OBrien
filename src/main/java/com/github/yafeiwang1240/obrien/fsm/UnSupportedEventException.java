@@ -1,4 +1,4 @@
-package com.github.yafeiwang1240.obrien.exception;
+package com.github.yafeiwang1240.obrien.fsm;
 
 public class UnSupportedEventException extends Exception {
     public UnSupportedEventException() {

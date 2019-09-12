@@ -1,4 +1,4 @@
-package com.github.yafeiwang1240.obrien.exception;
+package com.github.yafeiwang1240.obrien.uitls.exception;
 
 /**
  * 序列化异常
