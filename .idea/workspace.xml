@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="结构调整，去除无用方法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/DateUtils.java" afterDir="false" />
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/ValidateUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -245,7 +243,10 @@
       <workItem from="1568203382444" duration="36000" />
       <workItem from="1568203462404" duration="154000" />
       <workItem from="1568254859344" duration="4132000" />
-      <workItem from="1568262042835" duration="8473000" />
+      <workItem from="1568262042835" duration="8524000" />
+      <workItem from="1568687293899" duration="9000" />
+      <workItem from="1568871446650" duration="65000" />
+      <workItem from="1568874761973" duration="163000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -534,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568256575303</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="date utils">
+      <created>1568270810839</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1568270810839</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -577,7 +585,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加泛型获取.class方法" />
     <MESSAGE value="fastjson安全升级" />
     <MESSAGE value="初始化内多分组" />
     <MESSAGE value="添加java反射优化工具" />
@@ -602,7 +609,8 @@
     <MESSAGE value="添加子类搜索功能" />
     <MESSAGE value="添加搜索子类功能" />
     <MESSAGE value="结构调整，去除无用方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="结构调整，去除无用方法" />
+    <MESSAGE value="date utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="date utils" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
