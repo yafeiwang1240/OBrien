@@ -7,6 +7,7 @@ import com.github.yafeiwang1240.obrien.bean.ClassUtils;
 import com.github.yafeiwang1240.obrien.bean.Convert;
 import com.github.yafeiwang1240.obrien.bean.EnhanceBeanUtils;
 import com.github.yafeiwang1240.obrien.bean.enums.EnumFieldTransfer;
+import com.github.yafeiwang1240.obrien.bean.exception.FieldTransferException;
 import com.github.yafeiwang1240.obrien.fastreflect.BeanReflectUtils;
 import com.github.yafeiwang1240.obrien.fastreflect.FastReflectUtils;
 import com.github.yafeiwang1240.obrien.fastreflect.pack.BeanReflectPack;
@@ -27,6 +28,7 @@ import com.github.yafeiwang1240.obrien.stacktrace.VerificationUtils;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
 import com.github.yafeiwang1240.obrien.uitls.DateUtils;
+import com.github.yafeiwang1240.obrien.uitls.JsonUtils;
 import com.github.yafeiwang1240.obrien.validation.IValidator;
 import com.github.yafeiwang1240.obrien.validation.ValidationUtils;
 import com.github.yafeiwang1240.obrien.validation.annotation.Length;
@@ -44,9 +46,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.text.ParseException;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -56,10 +57,58 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
+        Integer[] aa = new Integer[]{1, 2};
+        System.out.println(aa.getClass().getSuperclass());
+    }
+
+    public static void test21() throws FieldTransferException {
+        Map<String, Object> map = new HashMap<>();
+        map.put("hello", "world");
+        map.put("name", "wangayfei");
+        map.put("value", 100);
+        String json = JsonUtils.toJson(map);
+        People people = JsonUtils.parseObject(json, People.class);
+        System.out.println(people.getValue());
+        people = EnhanceBeanUtils.toObject(map, People.class);
+        System.out.println(people.getValue());
+    }
+
+    public static class People {
+        private String hello;
+        private String name;
+        private Integer value;
+
+        public String getHello() {
+            return hello;
+        }
+
+        public void setHello(String hello) {
+            this.hello = hello;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public Integer getValue() {
+            return value;
+        }
+
+        public void setValue(Integer value) {
+            this.value = value;
+        }
+    }
+
+    public static void test20() throws ParseException {
         System.out.println(DateUtils.toString(DateUtils.parseDate((new java.util.Date()).toString())));
         System.out.println(DateUtils.toString(DateUtils.parseDate(System.currentTimeMillis())));
         System.out.println(DateUtils.toString(DateUtils.parseDate(10000000L)));
         System.out.println(DateUtils.toString(DateUtils.parseDate("2019-09-01 00:20:00")));
+
     }
 
     public static void test19() {
