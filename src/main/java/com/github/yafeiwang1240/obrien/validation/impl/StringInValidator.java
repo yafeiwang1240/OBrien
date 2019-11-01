@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class StringInValidator extends AbstractValidator<StringIn, String> {
 
-    Set<String> values;
+    private Set<String> values;
 
     public StringInValidator(StringIn annotation) {
         super(annotation);

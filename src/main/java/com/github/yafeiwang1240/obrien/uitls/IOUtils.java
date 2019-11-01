@@ -5,6 +5,7 @@ import java.io.IOException;
 
 public class IOUtils {
     public static void closeQuietly(Closeable o) {
+        if (o == null) return;
         try {
             o.close();
         } catch (Exception e) {
