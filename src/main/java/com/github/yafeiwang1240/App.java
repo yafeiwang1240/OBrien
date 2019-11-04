@@ -29,6 +29,7 @@ import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
 import com.github.yafeiwang1240.obrien.uitls.DateUtils;
 import com.github.yafeiwang1240.obrien.uitls.JsonUtils;
+import com.github.yafeiwang1240.obrien.uitls.RSACoder;
 import com.github.yafeiwang1240.obrien.validation.IValidator;
 import com.github.yafeiwang1240.obrien.validation.ValidationUtils;
 import com.github.yafeiwang1240.obrien.validation.annotation.Length;
@@ -57,8 +58,40 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        Integer[] aa = new Integer[]{1, 2};
-        System.out.println(aa.getClass().getSuperclass());
+        test22();
+    }
+
+    public static void test22() throws Exception {
+        Map<String, Object> keyMap = RSACoder.initKey();
+        //公钥
+        byte[] publicKey = RSACoder.getPublicKey(keyMap);
+
+        //私钥
+        byte[] privateKey = RSACoder.getPrivateKey(keyMap);
+        String publicString = Base64.getEncoder().encodeToString(publicKey);
+        String privateString = Base64.getEncoder().encodeToString(privateKey);
+        System.out.println("公钥：" + publicString);
+        System.out.println("私钥：" + privateString);
+
+        System.out.println("================密钥对构造完毕,甲方将公钥公布给乙方，乙方向甲方发送数据=============");
+
+        String str = UUID.randomUUID().toString() + "_" + System.currentTimeMillis();
+
+        System.out.println("原文:" + str);
+
+        //乙方使用公钥对数据进行加密
+        byte[] code2 = RSACoder.encryptByPublicKey(str.getBytes(), publicKey);
+        System.out.println("===========乙方使用公钥对数据进行加密==============");
+        String mi = Base64.getEncoder().encodeToString(code2);
+        System.out.println("加密后的数据：" + mi);
+
+        System.out.println("=============乙方将数据传送给甲方======================");
+        System.out.println("===========甲方使用私钥对数据进行解密==============");
+
+        //甲方使用私钥对数据进行解密
+        byte[] decode2 = RSACoder.decryptByPrivateKey(Base64.getDecoder().decode(mi), privateKey);
+
+        System.out.println("甲方解密后的数据：" + new String(decode2));
     }
 
     public static void test21() throws FieldTransferException {
