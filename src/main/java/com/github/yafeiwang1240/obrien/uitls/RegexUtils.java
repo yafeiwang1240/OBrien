@@ -38,7 +38,7 @@ public class RegexUtils {
         List<String> result = Lists.create(ArrayList::new);
         Matcher matcher = getMatcher(context, regex);
         if(matcher.find()) {
-            for (int i = 1; i <= matcher.groupCount(); i++) {
+            for (int i = 1; i <= matcher.groupCount() + 1; i++) {
                 result.add(matcher.group(i));
             }
         }
@@ -50,7 +50,7 @@ public class RegexUtils {
         Matcher matcher = getMatcher(context, regex);
         while (matcher.find()) {
             List<String> list = Lists.create(ArrayList::new);
-            for(int i = 1; i <= matcher.groupCount(); i++) {
+            for(int i = 1; i <= matcher.groupCount() + 1; i++) {
                 list.add(matcher.group(i));
             }
             result.add(list);

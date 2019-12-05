@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/ValidateUtils.java" afterDir="false" />
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="常规校验">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/system/ProcessClose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/system/SystemEnvironment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/system/SystemOS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/system/SystemPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/ExtensionSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/Generate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/ITemplateFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/TemplateEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/exception/GenerateRuntimeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/BracesGenerateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DollarGenerateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DoubleDollarGenerateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/FunctionGenerateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/MethodGenerateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/PercentSignGenerateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/RegexUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/RegexUtils.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +62,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -55,11 +74,16 @@
   </component>
   <component name="ProjectId" id="1OfwzuVsNeQLXjmBXQt5mkQSuUb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../framework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -75,7 +99,11 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hogwarts\OBrien\src\main\java\com\github\yafeiwang1240\obrien" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.yafeiwang1240.obrien.uitls" />
       <recent name="com.githup.yafeiwang1240.obrien.Bean" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -85,18 +113,6 @@
       <recent name="com.githup.yafeiwang1240.obrien.validation.impl" />
       <recent name="com.githup.yafeiwang1240.obrien.validation.exception" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -108,6 +124,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\wangyafei\AppData\Roaming\Subversion</configuration>
@@ -246,7 +274,26 @@
       <workItem from="1568262042835" duration="8524000" />
       <workItem from="1568687293899" duration="9000" />
       <workItem from="1568871446650" duration="65000" />
-      <workItem from="1568874761973" duration="163000" />
+      <workItem from="1568874761973" duration="217000" />
+      <workItem from="1571905169596" duration="61000" />
+      <workItem from="1571967413570" duration="521000" />
+      <workItem from="1571968091695" duration="179000" />
+      <workItem from="1572341153628" duration="444000" />
+      <workItem from="1572351699947" duration="27000" />
+      <workItem from="1572575899337" duration="1142000" />
+      <workItem from="1572577945094" duration="4598000" />
+      <workItem from="1572586325967" duration="1055000" />
+      <workItem from="1572588686328" duration="31000" />
+      <workItem from="1572607740755" duration="1766000" />
+      <workItem from="1572658955783" duration="983000" />
+      <workItem from="1572747407042" duration="33000" />
+      <workItem from="1572832173331" duration="134000" />
+      <workItem from="1572923538949" duration="941000" />
+      <workItem from="1572924570718" duration="416000" />
+      <workItem from="1574821021018" duration="109000" />
+      <workItem from="1574826659961" duration="342000" />
+      <workItem from="1574911817496" duration="4432000" />
+      <workItem from="1575519190217" duration="15449000" />
     </task>
     <task id="LOCAL-00001" summary="Java Bean封装">
       <created>1560645406019</created>
@@ -542,7 +589,35 @@
       <option name="project" value="LOCAL" />
       <updated>1568270810839</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="常规校验">
+      <created>1568874947078</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1568874947078</updated>
+    </task>
+    <task id="LOCAL-00044" summary="空指针判断">
+      <created>1572576236442</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1572576236442</updated>
+    </task>
+    <task id="LOCAL-00045" summary="增加json util">
+      <created>1572586996066</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1572586996066</updated>
+    </task>
+    <task id="LOCAL-00046" summary="非对称加密算法">
+      <created>1572832221222</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1572832221222</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -585,10 +660,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fastjson安全升级" />
-    <MESSAGE value="初始化内多分组" />
-    <MESSAGE value="添加java反射优化工具" />
-    <MESSAGE value="解决class匹配问题" />
     <MESSAGE value="添加属性和方法获取" />
     <MESSAGE value="添加属性和方法获取&#10;添加通用 bean pool" />
     <MESSAGE value="修改为bean pool内部回调通讯，解决pool监听bug" />
@@ -610,7 +681,69 @@
     <MESSAGE value="添加搜索子类功能" />
     <MESSAGE value="结构调整，去除无用方法" />
     <MESSAGE value="date utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="date utils" />
+    <MESSAGE value="常规校验" />
+    <MESSAGE value="空指针判断" />
+    <MESSAGE value="增加json util" />
+    <MESSAGE value="非对称加密算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="非对称加密算法" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1575531359042">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1575531359042" />
+    <state x="260" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575529295648">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="260" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1575529295648" />
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1575538689576">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1575538689576" />
+    <state width="646" height="466" key="DebuggerActiveHint" timestamp="1575538058153">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="646" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1575538058153" />
+    <state width="1237" height="244" key="GridCell.Tab.0.bottom" timestamp="1575538559857">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="244" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
+    <state width="1237" height="244" key="GridCell.Tab.0.center" timestamp="1575538559857">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="244" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
+    <state width="1237" height="244" key="GridCell.Tab.0.left" timestamp="1575538559857">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="244" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
+    <state width="1237" height="244" key="GridCell.Tab.0.right" timestamp="1575538559857">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="244" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
+    <state width="1237" height="244" key="GridCell.Tab.1.bottom" timestamp="1575538559857">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="244" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
+    <state width="1237" height="244" key="GridCell.Tab.1.center" timestamp="1575538559856">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="244" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1575538559856" />
+    <state width="1237" height="244" key="GridCell.Tab.1.left" timestamp="1575538559856">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="244" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1575538559856" />
+    <state width="1237" height="244" key="GridCell.Tab.1.right" timestamp="1575538559857">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="244" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
+    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575538677119">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1575538677119" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1575524937851">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1575524937851" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

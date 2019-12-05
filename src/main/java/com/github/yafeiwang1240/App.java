@@ -17,6 +17,7 @@ import com.github.yafeiwang1240.obrien.initialization.annotation.Initializer;
 import com.github.yafeiwang1240.obrien.initialization.annotation.InitializerGroup;
 import com.github.yafeiwang1240.obrien.initialization.execution.InitializedFailedException;
 import com.github.yafeiwang1240.obrien.lang.Lists;
+import com.github.yafeiwang1240.obrien.lang.Maps;
 import com.github.yafeiwang1240.obrien.lang.Maths;
 import com.github.yafeiwang1240.obrien.pool.BeanPool;
 import com.github.yafeiwang1240.obrien.pool.BeanPoolFactory;
@@ -27,6 +28,8 @@ import com.github.yafeiwang1240.obrien.stacktrace.VerificationResult;
 import com.github.yafeiwang1240.obrien.stacktrace.VerificationUtils;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
 import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
+import com.github.yafeiwang1240.obrien.template.ITemplateFunction;
+import com.github.yafeiwang1240.obrien.template.TemplateEngine;
 import com.github.yafeiwang1240.obrien.uitls.DateUtils;
 import com.github.yafeiwang1240.obrien.uitls.JsonUtils;
 import com.github.yafeiwang1240.obrien.uitls.RSACoder;
@@ -58,7 +61,18 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        test22();
+        test23();
+    }
+
+    public static void test23() {
+        String ex = "{{ date[:4] + '01'}}, hhh {{dd(date, 1)}}";
+        String result = TemplateEngine.generate(ex, Maps.newStringMap("date", "20191205"),
+                new ITemplateFunction() {
+                    public String dd(String date, int day, int month) {
+                        return "20181125" + day;
+                    }
+            });
+        System.out.println(result);
     }
 
     public static void test22() throws Exception {
@@ -69,7 +83,9 @@ public class App
         //私钥
         byte[] privateKey = RSACoder.getPrivateKey(keyMap);
         String publicString = Base64.getEncoder().encodeToString(publicKey);
+        int length = publicKey.length;
         String privateString = Base64.getEncoder().encodeToString(privateKey);
+        length = privateKey.length;
         System.out.println("公钥：" + publicString);
         System.out.println("私钥：" + privateString);
 
