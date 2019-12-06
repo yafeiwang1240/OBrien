@@ -65,13 +65,20 @@ public class App
     }
 
     public static void test23() {
-        String ex = "{{ date[:4] + '01'}}, hhh {{dd(date, 1)}}";
+        String ex = "{{ date[:4] + '01'}}, hhh {{dd(date, 1)}} {{aa() + 01}}";
         String result = TemplateEngine.generate(ex, Maps.newStringMap("date", "20191205"),
                 new ITemplateFunction() {
-                    public String dd(String date, int day, int month) {
+                    public String dd(String date, int day, Integer month) {
                         return "20181125" + day;
                     }
-            });
+
+                },
+                new ITemplateFunction() {
+
+                    public String aa() {
+                        return "20181125";
+                    }
+        });
         System.out.println(result);
     }
 
