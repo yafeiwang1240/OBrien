@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="依赖升级">
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/TemplateEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/TemplateEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/BracesGenerateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/BracesGenerateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DollarGenerateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DollarGenerateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DoubleDollarGenerateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DoubleDollarGenerateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/PercentSignGenerateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/PercentSignGenerateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,14 +276,7 @@
       <workItem from="1574911817496" duration="4432000" />
       <workItem from="1575519190217" duration="16903000" />
       <workItem from="1575600663692" duration="3339000" />
-      <workItem from="1575617827516" duration="1209000" />
-    </task>
-    <task id="LOCAL-00002" summary="Bean Tools">
-      <created>1560696187163</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1560696187163</updated>
+      <workItem from="1575617827516" duration="2881000" />
     </task>
     <task id="LOCAL-00003" summary="实现同步状态转换机">
       <created>1560759348064</created>
@@ -626,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575603613683</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="提供单例模式">
+      <created>1575619625192</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1575619625192</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -699,7 +694,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bean pool 添加阻塞获取方法" />
     <MESSAGE value="bean pool get sleep 300ms" />
     <MESSAGE value="有向无环图成环判断" />
     <MESSAGE value="同名属性拷贝，由方法到属性值直接获取" />
@@ -724,7 +718,8 @@
     <MESSAGE value="依赖升级" />
     <MESSAGE value="readme" />
     <MESSAGE value="增加sets方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加sets方法" />
+    <MESSAGE value="提供单例模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="提供单例模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1575602410076">
@@ -739,30 +734,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="260" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1575529295648" />
-    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1575619436178">
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1575619623145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1575619436178" />
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1575619623145" />
     <state width="646" height="466" key="DebuggerActiveHint" timestamp="1575538058153">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="646" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1575538058153" />
-    <state width="1237" height="178" key="GridCell.Tab.0.bottom" timestamp="1575619520157">
+    <state width="1237" height="178" key="GridCell.Tab.0.bottom" timestamp="1575624806325">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="178" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1575619520157" />
-    <state width="1237" height="178" key="GridCell.Tab.0.center" timestamp="1575619520156">
+    <state width="1237" height="178" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1575624806325" />
+    <state width="1237" height="178" key="GridCell.Tab.0.center" timestamp="1575624806325">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="178" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1575619520156" />
-    <state width="1237" height="178" key="GridCell.Tab.0.left" timestamp="1575619520156">
+    <state width="1237" height="178" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1575624806325" />
+    <state width="1237" height="178" key="GridCell.Tab.0.left" timestamp="1575624806325">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="178" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1575619520156" />
-    <state width="1237" height="178" key="GridCell.Tab.0.right" timestamp="1575619520156">
+    <state width="1237" height="178" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1575624806325" />
+    <state width="1237" height="178" key="GridCell.Tab.0.right" timestamp="1575624806325">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="178" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1575619520156" />
+    <state width="1237" height="178" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1575624806325" />
     <state width="1237" height="249" key="GridCell.Tab.1.bottom" timestamp="1575604005107">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -779,29 +774,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="249" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1575604005107" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1575602799554">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1575619628970">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1575602799554" />
-    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575603753493">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1575619628970" />
+    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575624796113">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1575603753493" />
+    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1575624796113" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1575601878534">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1575601878534" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/TemplateEngine.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
