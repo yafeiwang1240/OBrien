@@ -65,7 +65,7 @@ public class App
     }
 
     public static void test23() {
-        String ex = "{{ date[:4] + '01'}}, hhh {{dd(date, 1)}} {{aa() + 01}}";
+        String ex = "$date 哼哼 %date% {{ date[:4] + '01'}}, hhh {{dd(date, 1)}} {{aa() + 01}}";
         String result = TemplateEngine.generate(ex, Maps.newStringMap("date", "20191205"),
                 new ITemplateFunction() {
                     public String dd(String date, int day, Integer month) {

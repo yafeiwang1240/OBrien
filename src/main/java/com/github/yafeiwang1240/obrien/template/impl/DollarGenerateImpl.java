@@ -9,6 +9,17 @@ import java.util.Map;
  * @author wangyafei
  */
 public class DollarGenerateImpl extends Generate {
+
+    private static DollarGenerateImpl instance = new DollarGenerateImpl();
+
+    private DollarGenerateImpl() {
+
+    }
+
+    public static DollarGenerateImpl getInstance() {
+        return instance;
+    }
+
     @Override
     public String generate(String expression, Map<String, String> parameters) {
         String _expression = expression;

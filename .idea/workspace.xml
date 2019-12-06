@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="常规校验">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/system/ProcessClose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/system/SystemEnvironment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/system/SystemOS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/system/SystemPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/ExtensionSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/Generate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/ITemplateFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/TemplateEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/exception/GenerateRuntimeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/BracesGenerateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DollarGenerateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DoubleDollarGenerateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/FunctionGenerateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/MethodGenerateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/PercentSignGenerateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="008c0918-2a50-4f4e-b2b3-334b4241b230" name="Default Changelist" comment="依赖升级">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/RegexUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/uitls/RegexUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/TemplateEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/TemplateEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/BracesGenerateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/BracesGenerateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DollarGenerateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DollarGenerateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DoubleDollarGenerateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/DoubleDollarGenerateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/PercentSignGenerateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/impl/PercentSignGenerateImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,19 +85,19 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\hogwarts\OBrien\src\main\java\com\github\yafeiwang1240\obrien" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.github.yafeiwang1240.obrien.uitls" />
-      <recent name="com.githup.yafeiwang1240.obrien.Bean" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.github.yafeiwang1240.obrien.uitls" />
       <recent name="com.github.yafeiwang1240.obrien.initialization.model" />
       <recent name="com.githup.yafeiwang1240.obrien.validation.annotation" />
       <recent name="com.githup.yafeiwang1240.obrien.validation.impl" />
       <recent name="com.githup.yafeiwang1240.obrien.validation.exception" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.yafeiwang1240.obrien.uitls" />
+      <recent name="com.githup.yafeiwang1240.obrien.Bean" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hogwarts\OBrien\src\main\java\com\github\yafeiwang1240\obrien" />
     </key>
   </component>
   <component name="RunManager">
@@ -293,14 +279,9 @@
       <workItem from="1574821021018" duration="109000" />
       <workItem from="1574826659961" duration="342000" />
       <workItem from="1574911817496" duration="4432000" />
-      <workItem from="1575519190217" duration="15449000" />
-    </task>
-    <task id="LOCAL-00001" summary="Java Bean封装">
-      <created>1560645406019</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1560645406019</updated>
+      <workItem from="1575519190217" duration="16903000" />
+      <workItem from="1575600663692" duration="3339000" />
+      <workItem from="1575617827516" duration="1209000" />
     </task>
     <task id="LOCAL-00002" summary="Bean Tools">
       <created>1560696187163</created>
@@ -617,7 +598,35 @@
       <option name="project" value="LOCAL" />
       <updated>1572832221222</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="模板渲染引擎">
+      <created>1575538724162</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1575538724162</updated>
+    </task>
+    <task id="LOCAL-00048" summary="依赖升级">
+      <created>1575601375914</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1575601375914</updated>
+    </task>
+    <task id="LOCAL-00049" summary="readme">
+      <created>1575602796080</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1575602796080</updated>
+    </task>
+    <task id="LOCAL-00050" summary="增加sets方法">
+      <created>1575603613683</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1575603613683</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView">
@@ -635,6 +644,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/hogwarts/OBrien/src/main/java/com/github/yafeiwang1240/obrien/template/exception" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -643,6 +677,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
     <option name="RECENT_FILTERS">
       <map>
@@ -660,10 +699,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加属性和方法获取" />
-    <MESSAGE value="添加属性和方法获取&#10;添加通用 bean pool" />
-    <MESSAGE value="修改为bean pool内部回调通讯，解决pool监听bug" />
-    <MESSAGE value="有向无环图成环判断算法、优化反射工具fastreflect, beanpool算法" />
     <MESSAGE value="bean pool 添加阻塞获取方法" />
     <MESSAGE value="bean pool get sleep 300ms" />
     <MESSAGE value="有向无环图成环判断" />
@@ -685,65 +720,88 @@
     <MESSAGE value="空指针判断" />
     <MESSAGE value="增加json util" />
     <MESSAGE value="非对称加密算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="非对称加密算法" />
+    <MESSAGE value="模板渲染引擎" />
+    <MESSAGE value="依赖升级" />
+    <MESSAGE value="readme" />
+    <MESSAGE value="增加sets方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加sets方法" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1575531359042">
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1575602410076">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1575531359042" />
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1575602410076" />
+    <state x="408" y="225" width="509" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575618995454">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="408" y="225" width="509" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1575618995454" />
     <state x="260" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575529295648">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="260" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1575529295648" />
-    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1575538689576">
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1575619436178">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1575538689576" />
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1575619436178" />
     <state width="646" height="466" key="DebuggerActiveHint" timestamp="1575538058153">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="646" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1575538058153" />
-    <state width="1237" height="244" key="GridCell.Tab.0.bottom" timestamp="1575538559857">
+    <state width="1237" height="178" key="GridCell.Tab.0.bottom" timestamp="1575619520157">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="244" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
-    <state width="1237" height="244" key="GridCell.Tab.0.center" timestamp="1575538559857">
+    <state width="1237" height="178" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1575619520157" />
+    <state width="1237" height="178" key="GridCell.Tab.0.center" timestamp="1575619520156">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="244" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
-    <state width="1237" height="244" key="GridCell.Tab.0.left" timestamp="1575538559857">
+    <state width="1237" height="178" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1575619520156" />
+    <state width="1237" height="178" key="GridCell.Tab.0.left" timestamp="1575619520156">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="244" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
-    <state width="1237" height="244" key="GridCell.Tab.0.right" timestamp="1575538559857">
+    <state width="1237" height="178" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1575619520156" />
+    <state width="1237" height="178" key="GridCell.Tab.0.right" timestamp="1575619520156">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="244" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
-    <state width="1237" height="244" key="GridCell.Tab.1.bottom" timestamp="1575538559857">
+    <state width="1237" height="178" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1575619520156" />
+    <state width="1237" height="249" key="GridCell.Tab.1.bottom" timestamp="1575604005107">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="244" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
-    <state width="1237" height="244" key="GridCell.Tab.1.center" timestamp="1575538559856">
+    <state width="1237" height="249" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1575604005107" />
+    <state width="1237" height="249" key="GridCell.Tab.1.center" timestamp="1575604005107">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="244" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1575538559856" />
-    <state width="1237" height="244" key="GridCell.Tab.1.left" timestamp="1575538559856">
+    <state width="1237" height="249" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1575604005107" />
+    <state width="1237" height="249" key="GridCell.Tab.1.left" timestamp="1575604005106">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="244" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1575538559856" />
-    <state width="1237" height="244" key="GridCell.Tab.1.right" timestamp="1575538559857">
+    <state width="1237" height="249" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1575604005106" />
+    <state width="1237" height="249" key="GridCell.Tab.1.right" timestamp="1575604005107">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="244" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1575538559857" />
-    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575538677119">
+    <state width="1237" height="249" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1575604005107" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1575602799554">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1575538677119" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1575524937851">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1575602799554" />
+    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575603753493">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1575524937851" />
+    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1575603753493" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1575601878534">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1575601878534" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/yafeiwang1240/obrien/template/TemplateEngine.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

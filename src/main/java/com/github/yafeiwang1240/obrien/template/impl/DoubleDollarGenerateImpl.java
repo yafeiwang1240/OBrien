@@ -10,6 +10,16 @@ import java.util.Map;
  */
 public class DoubleDollarGenerateImpl extends Generate {
 
+    private static DoubleDollarGenerateImpl instance = new DoubleDollarGenerateImpl();
+
+    private DoubleDollarGenerateImpl() {
+
+    }
+
+    public static DoubleDollarGenerateImpl getInstance() {
+        return instance;
+    }
+
     @Override
     public String generate(String expression, Map<String, String> parameters) {
         String _expression = expression;

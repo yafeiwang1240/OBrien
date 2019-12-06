@@ -19,10 +19,10 @@ public class TemplateEngine {
 
     static {
         baseGenerate = new ArrayList<>(4);
-        baseGenerate.add(new DoubleDollarGenerateImpl());
-        baseGenerate.add(new DollarGenerateImpl());
-        baseGenerate.add(new PercentSignGenerateImpl());
-        baseGenerate.add(new BracesGenerateImpl());
+        baseGenerate.add(DoubleDollarGenerateImpl.getInstance());
+        baseGenerate.add(DollarGenerateImpl.getInstance());
+        baseGenerate.add(PercentSignGenerateImpl.getInstance());
+        baseGenerate.add(BracesGenerateImpl.getInstance());
     }
 
     private static Map<Class<?>, Generate> functionGenerateCache = new HashMap<>();
@@ -37,7 +37,7 @@ public class TemplateEngine {
     public static String generate(String expression, Map<String, String> parameters, ITemplateFunction... functions) {
         String _expression = expression;
         for (Generate generate : baseGenerate) {
-            _expression = generate.generate(expression, parameters);
+            _expression = generate.generate(_expression, parameters);
         }
         if (functions != null && functions.length > 0)  {
             for (ITemplateFunction function : functions) {

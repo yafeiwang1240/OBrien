@@ -10,6 +10,16 @@ import java.util.Map;
  */
 public class PercentSignGenerateImpl extends Generate {
 
+    private static PercentSignGenerateImpl instance = new PercentSignGenerateImpl();
+
+    private PercentSignGenerateImpl() {
+
+    }
+
+    public static PercentSignGenerateImpl getInstance() {
+        return instance;
+    }
+
     @Override
     public String generate(String expression, Map<String, String> parameters) {
         String _expression = expression;

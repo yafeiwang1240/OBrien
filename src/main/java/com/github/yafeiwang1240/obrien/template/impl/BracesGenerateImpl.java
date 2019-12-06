@@ -14,6 +14,16 @@ import java.util.regex.Pattern;
  */
 public class BracesGenerateImpl extends Generate {
 
+    private static BracesGenerateImpl instance = new BracesGenerateImpl();
+
+    private BracesGenerateImpl() {
+
+    }
+
+    public static BracesGenerateImpl getInstance() {
+        return instance;
+    }
+
     @Override
     public String generate(String expression, Map<String, String> parameters) {
         String _expression = expression;
