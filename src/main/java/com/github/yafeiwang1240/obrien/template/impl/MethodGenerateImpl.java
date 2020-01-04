@@ -42,6 +42,14 @@ class MethodGenerateImpl extends Generate {
                 args = new Object[parameterTypes.length];
                 for (int i = 0; i < values.length; i++) {
                     String v = ExtensionSupport.spiltValue(values[i].trim());
+                    // 此处表示字符串，需要把引号去掉
+                    if (v.length() > 1) {
+                        if (v.startsWith("\"") && v.endsWith("\"")) {
+                            v = v.substring(1, v.length() - 1);
+                        } else if (v.startsWith("'") && v.endsWith("'")) {
+                            v = v.substring(1, v.length() - 1);
+                        }
+                    }
                     if (parameters.containsKey(v)) {
                         v = parameters.get(v);
                     }

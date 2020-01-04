@@ -61,7 +61,15 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        test23();
+        String v = "\'11\'";
+        if (v.length() > 1) {
+            if (v.startsWith("\"") && v.endsWith("\"")) {
+                v = v.substring(1, v.length() - 1);
+            } else if (v.startsWith("\'") && v.endsWith("\'")) {
+                v = v.substring(1, v.length() - 1);
+            }
+        }
+        System.out.println(v);
     }
 
     public static void test23() {

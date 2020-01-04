@@ -96,4 +96,25 @@ public final class Maths {
         return dividend / divisor;
     }
 
+    /**
+     * 计算方差
+     * @param values
+     * @return
+     */
+    public static double variance(double... values) {
+        if (values == null || values.length <= 0) return 0;
+        double average = 0;
+        for (double value : values) {
+            average += value;
+        }
+        average = average / values.length;
+        double result = 0;
+        double ex;
+        for (double value : values) {
+            ex = value - average;
+            result += ex * ex;
+        }
+        return result / values.length;
+    }
+
 }
