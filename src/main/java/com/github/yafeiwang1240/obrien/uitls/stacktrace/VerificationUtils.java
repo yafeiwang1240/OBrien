@@ -1,7 +1,7 @@
-package com.github.yafeiwang1240.obrien.stacktrace;
+package com.github.yafeiwang1240.obrien.uitls.stacktrace;
 
-import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
-import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
+import com.github.yafeiwang1240.obrien.uitls.stacktrace.annotation.BeanRequest;
+import com.github.yafeiwang1240.obrien.uitls.stacktrace.annotation.MethodRequest;
 import com.github.yafeiwang1240.obrien.lang.Lists;
 import com.github.yafeiwang1240.obrien.uitls.StackTraceUtils;
 

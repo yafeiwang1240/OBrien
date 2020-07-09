@@ -5,6 +5,7 @@ import com.github.yafeiwang1240.obrien.initialization.annotation.InitializedMeth
 import com.github.yafeiwang1240.obrien.initialization.annotation.Initializer;
 import com.github.yafeiwang1240.obrien.initialization.annotation.InitializerGroup;
 import com.github.yafeiwang1240.obrien.initialization.execution.InitializedFailedException;
+import com.github.yafeiwang1240.obrien.initialization.impl.AbstractInitializedCreate;
 import com.github.yafeiwang1240.obrien.lang.Lists;
 import com.github.yafeiwang1240.obrien.lang.Maps;
 
@@ -12,6 +13,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -25,27 +27,19 @@ public class InitializePack {
 
     private Map<String, List<Initialized>> initializedCache = Maps.create(ConcurrentHashMap::new);
 
-    public void addFieldInitializer(Field f) throws InitializedFailedException {
-        Initializer annotation = f.getDeclaredAnnotation(Initializer.class);
-        if(annotation == null) return;
-        try {
-            Class<? extends Initialized>[] initializations = annotation.initializations();
-            for (Class<? extends Initialized> clazz : initializations) {
-                InitializerGroup initializerGroup = clazz.getDeclaredAnnotation(InitializerGroup.class);
-                if (initializerGroup == null) {
-                    throw new InitializedFailedException("初始化类添加注解：" + InitializerGroup.class.getName());
+    public void addFieldInitializer(Field f, AbstractInitializedCreate create) throws InitializedFailedException {
+        Map<String, List<Initialized>> stringListMap = create.getInitExecutor();
+        if (!stringListMap.isEmpty()) {
+            for (Map.Entry<String, List<Initialized>> entry : stringListMap.entrySet()) {
+                List<FieldInitializedExecutor> executors;
+                if ((executors = fieldInitializerCache.get(entry.getKey())) == null) {
+                    executors = new ArrayList<>();
+                    fieldInitializerCache.put(entry.getKey(), executors);
                 }
-                List<FieldInitializedExecutor> fieldInitializer;
-                if ((fieldInitializer = fieldInitializerCache.get(initializerGroup.group())) == null) {
-                    fieldInitializer = Lists.create(ArrayList::new);
-                    fieldInitializerCache.put(initializerGroup.group(), fieldInitializer);
+                for (Initialized initialized : entry.getValue()) {
+                    executors.add(new FieldInitializedExecutor(f, initialized));
                 }
-                fieldInitializer.add(new FieldInitializedExecutor(f, clazz.newInstance()));
             }
-        } catch (InstantiationException e) {
-            throw new InitializedFailedException("初始化实例过程失败", e);
-        } catch (IllegalAccessException e) {
-            throw new InitializedFailedException("初始化非法访问", e);
         }
     }
 
@@ -62,23 +56,7 @@ public class InitializePack {
     }
 
     public void setInitialized(Initializer Initializer) throws InitializedFailedException {
-        Class<? extends Initialized>[] initializeds = Initializer.initializations();
-        for (Class<? extends Initialized> clazz : initializeds) {
-            InitializerGroup initializerGroup = clazz.getDeclaredAnnotation(InitializerGroup.class);
-            if (initializerGroup == null) {
-                throw new InitializedFailedException("初始化类添加注解：" + InitializerGroup.class.getName());
-            }
-            List<Initialized> initializedList;
-            if ((initializedList = initializedCache.get(initializerGroup.group())) == null){
-                initializedList = Lists.create(ArrayList::new);
-                initializedCache.put(initializerGroup.group(), initializedList);
-            }
-            try {
-                initializedList.add(clazz.newInstance());
-            } catch (InstantiationException | IllegalAccessException e) {
-                throw new InitializedFailedException(e.getMessage());
-            }
-        }
+        initializedCache.putAll(getInitExecutor(Initializer));
     }
 
     public void initialize(String group, Object o) throws InitializedFailedException {
@@ -104,5 +82,29 @@ public class InitializePack {
                 value.execute(o);
             }
         }
+    }
+
+    public static Map<String, List<Initialized>> getInitExecutor(Initializer annotation) throws InitializedFailedException {
+        Map<String, List<Initialized>> result = new HashMap<>();
+        try {
+            Class<? extends Initialized>[] initializations = annotation.initializations();
+            for (Class<? extends Initialized> clazz : initializations) {
+                InitializerGroup initializerGroup = clazz.getDeclaredAnnotation(InitializerGroup.class);
+                if (initializerGroup == null) {
+                    throw new InitializedFailedException("初始化类添加注解：" + InitializerGroup.class.getName());
+                }
+                List<Initialized> initializeds;
+                if ((initializeds = result.get(initializerGroup.group())) == null) {
+                    initializeds = Lists.create(ArrayList::new);
+                    result.put(initializerGroup.group(), initializeds);
+                }
+                initializeds.add(clazz.newInstance());
+            }
+        } catch (InstantiationException e) {
+            throw new InitializedFailedException("初始化实例过程失败", e);
+        } catch (IllegalAccessException e) {
+            throw new InitializedFailedException("初始化非法访问", e);
+        }
+        return result;
     }
 }

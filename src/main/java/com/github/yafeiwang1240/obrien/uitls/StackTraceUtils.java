@@ -1,6 +1,6 @@
 package com.github.yafeiwang1240.obrien.uitls;
 
-import com.github.yafeiwang1240.obrien.stacktrace.StackTrace;
+import com.github.yafeiwang1240.obrien.uitls.stacktrace.StackTrace;
 
 import java.lang.reflect.Method;
 

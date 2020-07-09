@@ -13,6 +13,8 @@ import com.github.yafeiwang1240.obrien.fastreflect.FastReflectUtils;
 import com.github.yafeiwang1240.obrien.fastreflect.pack.BeanReflectPack;
 import com.github.yafeiwang1240.obrien.initialization.InitializationUtils;
 import com.github.yafeiwang1240.obrien.initialization.Initialized;
+import com.github.yafeiwang1240.obrien.initialization.annotation.InitializedInt;
+import com.github.yafeiwang1240.obrien.initialization.annotation.InitializedString;
 import com.github.yafeiwang1240.obrien.initialization.annotation.Initializer;
 import com.github.yafeiwang1240.obrien.initialization.annotation.InitializerGroup;
 import com.github.yafeiwang1240.obrien.initialization.execution.InitializedFailedException;
@@ -24,10 +26,10 @@ import com.github.yafeiwang1240.obrien.pool.BeanPoolFactory;
 import com.github.yafeiwang1240.obrien.pool.execption.BeanPoolSizeArgumentException;
 import com.github.yafeiwang1240.obrien.pool.model.BaseBean;
 import com.github.yafeiwang1240.obrien.pool.model.BeanFactory;
-import com.github.yafeiwang1240.obrien.stacktrace.VerificationResult;
-import com.github.yafeiwang1240.obrien.stacktrace.VerificationUtils;
-import com.github.yafeiwang1240.obrien.stacktrace.annotation.BeanRequest;
-import com.github.yafeiwang1240.obrien.stacktrace.annotation.MethodRequest;
+import com.github.yafeiwang1240.obrien.uitls.stacktrace.VerificationResult;
+import com.github.yafeiwang1240.obrien.uitls.stacktrace.VerificationUtils;
+import com.github.yafeiwang1240.obrien.uitls.stacktrace.annotation.BeanRequest;
+import com.github.yafeiwang1240.obrien.uitls.stacktrace.annotation.MethodRequest;
 import com.github.yafeiwang1240.obrien.template.ITemplateFunction;
 import com.github.yafeiwang1240.obrien.template.TemplateEngine;
 import com.github.yafeiwang1240.obrien.uitls.DateUtils;
@@ -61,6 +63,10 @@ import java.util.concurrent.TimeUnit;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
+        test4();
+    }
+
+    public static void test24() {
         String v = "\'11\'";
         if (v.length() > 1) {
             if (v.startsWith("\"") && v.endsWith("\"")) {
@@ -429,7 +435,7 @@ public class App
         InitForm form = new InitForm();
         try {
             InitializationUtils.initialize(form);
-            System.out.println(form.name);
+            System.out.println(form.integer);
         } catch (InitializedFailedException e) {
             e.printStackTrace();
         }
@@ -438,11 +444,14 @@ public class App
     public static class InitForm {
         @Initializer(initializations = Init.class)
         String name = "hh";
-        String value;
+        @InitializedString("我是初始化的操作")
+        String value = "heihei";
+        @InitializedInt(1)
+        Integer integer;
     }
 
     @InitializerGroup
-    public class Init implements Initialized<String> {
+    public static class Init implements Initialized<String> {
 
         @Override
         public String execute(String data) throws InitializedFailedException {

@@ -1,14 +1,18 @@
 package com.github.yafeiwang1240.obrien.initialization;
 
+import com.github.yafeiwang1240.obrien.initialization.annotation.InitializedMeans;
 import com.github.yafeiwang1240.obrien.initialization.annotation.InitializedMethod;
 import com.github.yafeiwang1240.obrien.initialization.annotation.Initializer;
 import com.github.yafeiwang1240.obrien.initialization.execution.InitializedFailedException;
+import com.github.yafeiwang1240.obrien.initialization.impl.AbstractInitializedCreate;
 import com.github.yafeiwang1240.obrien.initialization.model.InitializePack;
 import com.github.yafeiwang1240.obrien.lang.Maps;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -47,8 +51,19 @@ public class InitializationUtils {
             // 属性初始化
             Field[] fields = _clazz.getDeclaredFields();
             for (Field field : fields) {
-                if (field.getDeclaredAnnotation(Initializer.class) != null) {
-                    pack.addFieldInitializer(field);
+                Annotation[] annotations = field.getDeclaredAnnotations();
+                if (annotations != null && annotations.length > 0) {
+                    for (Annotation annotation : annotations) {
+                        if (annotation.annotationType().isAnnotationPresent(InitializedMeans.class)) {
+                            InitializedMeans means = annotation.annotationType().getAnnotation(InitializedMeans.class);
+                            try {
+                                AbstractInitializedCreate create = means.value().getConstructor(annotation.annotationType()).newInstance(annotation);
+                                pack.addFieldInitializer(field, create);
+                            } catch (Exception e) {
+                                throw new InitializedFailedException("初始化逻辑建造器创建失败", e);
+                            }
+                        }
+                    }
                 }
             }
 
@@ -65,7 +80,6 @@ public class InitializationUtils {
                 Initializer initializer = _clazz.getDeclaredAnnotation(Initializer.class);
                 pack.setInitialized(initializer);
             }
-
             // 父类
             _clazz = _clazz.getSuperclass();
         }
