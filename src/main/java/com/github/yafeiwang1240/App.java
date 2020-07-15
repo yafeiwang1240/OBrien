@@ -13,10 +13,7 @@ import com.github.yafeiwang1240.obrien.fastreflect.FastReflectUtils;
 import com.github.yafeiwang1240.obrien.fastreflect.pack.BeanReflectPack;
 import com.github.yafeiwang1240.obrien.initialization.InitializationUtils;
 import com.github.yafeiwang1240.obrien.initialization.Initialized;
-import com.github.yafeiwang1240.obrien.initialization.annotation.InitializedInt;
-import com.github.yafeiwang1240.obrien.initialization.annotation.InitializedString;
-import com.github.yafeiwang1240.obrien.initialization.annotation.Initializer;
-import com.github.yafeiwang1240.obrien.initialization.annotation.InitializerGroup;
+import com.github.yafeiwang1240.obrien.initialization.annotation.*;
 import com.github.yafeiwang1240.obrien.initialization.execution.InitializedFailedException;
 import com.github.yafeiwang1240.obrien.lang.Lists;
 import com.github.yafeiwang1240.obrien.lang.Maps;
@@ -446,8 +443,8 @@ public class App
         String name = "hh";
         @InitializedString("我是初始化的操作")
         String value = "heihei";
-        @InitializedInt(1)
-        Integer integer;
+        @InitializedJson(json = "[1, 2, 3]")
+        Integer[] integer;
     }
 
     @InitializerGroup

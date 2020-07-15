@@ -37,6 +37,7 @@ public class InitializePack {
                     fieldInitializerCache.put(entry.getKey(), executors);
                 }
                 for (Initialized initialized : entry.getValue()) {
+                    initialized.init(f);
                     executors.add(new FieldInitializedExecutor(f, initialized));
                 }
             }
