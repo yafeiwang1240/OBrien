@@ -186,56 +186,62 @@ public class SystemOS {
     }
 
     /**
-     * 指定进程pid
-     * @param process
-     * @return
+     * 部分linux系统无法加载kernel32
      */
-    public static long pid(Object process) throws IOException {
-        if(SystemEnvironment.os() == SystemEnvironment.OS.LINUX && process instanceof String) {
-            String command = (String) process;
-            return getLinuxPid(command);
+    public static class PIDHandler {
+
+        /**
+         * 指定进程pid
+         * @param process
+         * @return
+         */
+        public static long pid(Object process) throws IOException {
+            if(SystemEnvironment.os() == SystemEnvironment.OS.LINUX && process instanceof String) {
+                String command = (String) process;
+                return getLinuxPid(command);
+            }
+            if(SystemEnvironment.os() == SystemEnvironment.OS.WINDOWS && process instanceof Process) {
+                Process _process = (Process) process;
+                return getWindowsPid(_process);
+            }
+            throw new IllegalArgumentException("无效的输入");
         }
-        if(SystemEnvironment.os() == SystemEnvironment.OS.WINDOWS && process instanceof Process) {
-            Process _process = (Process) process;
-            return getWindowsPid(_process);
+
+        private static long getWindowsPid(Process process) {
+            long pid = -1;
+            Field field;
+            try {
+                field = process.getClass().getDeclaredField("handle");
+                field.setAccessible(true);
+                pid = Kernel32.INSTANCE.GetProcessId((long) field.get(process));
+            } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
+                // ignore
+            }
+            return pid;
         }
-        throw new IllegalArgumentException("无效的输入");
-    }
 
-    private static long getWindowsPid(Process process) {
-        long pid = -1;
-        Field field;
-        try {
-            field = process.getClass().getDeclaredField("handle");
-            field.setAccessible(true);
-            pid = Kernel32.INSTANCE.GetProcessId((long) field.get(process));
-        } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
-            // ignore
+        private interface Kernel32 extends Library {
+
+            Kernel32 INSTANCE = (Kernel32) Native.loadLibrary("kernel32", Kernel32.class);
+
+            long GetProcessId(long hProcess);
         }
-        return pid;
-    }
 
-    private interface Kernel32 extends Library {
+        private static long getLinuxPid(String command) throws IOException {
 
-        Kernel32 INSTANCE = (Kernel32) Native.loadLibrary("kernel32", Kernel32.class);
-
-        long GetProcessId(long hProcess);
-    }
-
-    private static long getLinuxPid(String command) throws IOException {
-
-        try (ProcessClose process = new ProcessClose(Runtime.getRuntime().exec("ps -ef"));
-             InputStreamReader inputStreamReader = new InputStreamReader(process.getInputStream());
-             BufferedReader reader = new BufferedReader(inputStreamReader)){
-            String line;
-            while ((line = reader.readLine()) != null) {
-                if (line.contains(command)) {
-                    System.out.println("相关信息 -----> " + command);
-                    String[] chars = line.split("\\s+");
-                    return Long.parseLong(chars[1]);
+            try (ProcessClose process = new ProcessClose(Runtime.getRuntime().exec("ps -ef"));
+                 InputStreamReader inputStreamReader = new InputStreamReader(process.getInputStream());
+                 BufferedReader reader = new BufferedReader(inputStreamReader)){
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    if (line.contains(command)) {
+                        System.out.println("相关信息 -----> " + command);
+                        String[] chars = line.split("\\s+");
+                        return Long.parseLong(chars[1]);
+                    }
                 }
             }
+            return -1;
         }
-        return -1;
     }
 }
