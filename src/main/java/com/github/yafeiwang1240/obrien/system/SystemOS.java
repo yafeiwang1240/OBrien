@@ -4,6 +4,7 @@ import com.sun.jna.Library;
 import com.sun.jna.Native;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.Field;
@@ -181,6 +182,38 @@ public class SystemOS {
             }
         } catch (Exception e) {
             // ignore
+        }
+        return result;
+    }
+
+    private static String PROC_PID_STATUS = "/proc/%s/status";
+
+    /**
+     * 获取进程树的内存使用
+     * @param cmd
+     * @return
+     */
+    public static List<Long> getPgMem(String cmd) {
+        List<ProcessInfo> tree = getPidTree(cmd);
+        if (tree == null || tree.isEmpty()) {
+            return null;
+        };
+        List<Long> result = new ArrayList<>(tree.size());
+        for (ProcessInfo info : tree) {
+            try(BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(new FileInputStream(
+                            String.format(PROC_PID_STATUS, info.getPID())
+                    ))
+            )) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    if (line.startsWith("VmRSS:")) {
+                        result.add(Long.parseLong(line.split("\\s+")[1]));
+                    }
+                }
+            } catch (Exception e) {
+                result.add(0L);
+            }
         }
         return result;
     }
